@@ -153,6 +153,11 @@ section {
   background-repeat: no-repeat;
 }
 
+.download-box {
+  -webkit-box-shadow: 5px 5px 0px 0px #0C0D0D;
+box-shadow: 5px 5px 0px 0px #0C0D0D;
+}
+
 
 .profile {
   border-radius: 100px 100px 100px 0;
@@ -164,6 +169,10 @@ FOOTER
 
 .border-top {
   border-color: #0C0D0D !important;
+}
+
+footer .container a img {
+  vertical-align: sub !important;
 }
 
 
