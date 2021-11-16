@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100vh;
+}
+body {
+  height: 100%;
+}
+
+html, body {
+  font-family: 'Urbanist', sans-serif;
+  background-color: #FFFFFF;
+  scroll-behavior: smooth;
+}
+
+hr {
+  background-color: #0C0D0D;
+  opacity: 1;
+}
+
+
+/* =============================================================================
+TEXT
+============================================================================= */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'DM Serif Display', serif;
+  color: #0C0D0D;
+}
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.25rem;
+}
+
+a {
+  color: #0C0D0D;
+  text-decoration: none;
+}
+a:hover {
+  color: #0C0D0D;
+  text-decoration: line-through;
+}
+
+/* =============================================================================
+COLORS
+============================================================================= */
+
+.white {
+  color: #FFFFFF;
+}
+
+/* =============================================================================
+NAVBAR
+============================================================================= */
+
+#mainNav.navbar-shrink .navbar-brand {
+  color: #0C0D0D;
+}
+#mainNav.navbar-shrink .nav-link {
+  color: #0C0D0D !important;
+}
+#mainNav.navbar-shrink .nav-link:hover {
+  color: #64a19d;
+}
+#mainNav.navbar-shrink .nav-link:active {
+  color: #467370;
+}
+#mainNav.navbar-shrink .nav-link.active {
+  color: #64a19d;
+  outline: none;
+}
+#mainNav.navbar-shrink .border-bottom {
+  border-color: #0C0D0D !important;
+}
+
+.nav-link {
+  font-family: 'DM Serif Display', serif;
+  color: #FFFFFF !important;
+}
+
+.border-bottom {
+  border-color: #FFFFFF !important;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* =============================================================================
+VIDEO JUMBOTRON
+============================================================================= */
+
+.jumbotron .container {
+  z-index: 1;
+}
+
+.jumbotron video {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /*  object-fit is not supported on IE  */
+  object-fit: cover;
+  opacity: 1;
+}
+
+/* =============================================================================
+BADGES
+============================================================================= */
+
+.badge-role {
+  border: 1px solid #0C0D0D;
+  border-radius: 4px;
+  color: #0C0D0D;
+}
+
+/* =============================================================================
+SECTIONS
+============================================================================= */
+
+section {
+  margin-top: 5rem;
+  padding-top: 4rem;
+}
+.squiggle {
+  background-image: url('../img/squiggle.svg');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+.circle {
+  background-image: url('../img/circle.svg');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.underline {
+  background-image: url('../img/underline.svg');
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+
+.profile {
+  border-radius: 100px 100px 100px 0;
+}
+
+/* =============================================================================
+FOOTER
+============================================================================= */
+
+.border-top {
+  border-color: #0C0D0D !important;
+}
+
+
+/* =============================================================================
+MOBILE
+============================================================================= */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .navbar .border-bottom {
+    /* background-color: #FFFFFF; */
+    border-bottom: none !important;
+  }
+}
