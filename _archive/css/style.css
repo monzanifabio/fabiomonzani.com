@@ -60,6 +60,9 @@ COLORS
 NAVBAR
 ============================================================================= */
 
+.filter-invert {
+  filter: invert(100%);
+}
 #mainNav.navbar-shrink .navbar-brand {
   color: #0C0D0D;
 }
@@ -193,6 +196,14 @@ MOBILE
   }
   .navbar-brand {
     margin-left: 1.5rem;
+  }
+  .jumbotron {
+    background-image: url('../video/video-fallback.gif');
+    background-size: cover;
+    background-position: bottom;
+  }
+  video {
+    display: none;
   }
 
 }

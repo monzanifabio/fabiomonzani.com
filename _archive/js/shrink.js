@@ -3,13 +3,19 @@ window.addEventListener('DOMContentLoaded', event => {
     // Navbar shrink function
     var navbarShrink = function () {
         const navbarCollapsible = document.body.querySelector('#mainNav');
+        const brand = document.body.querySelector('#brand');
+        const menu = document.body.querySelector('#menu');
         if (!navbarCollapsible) {
             return;
         }
         if (window.scrollY <= 700) {
-            navbarCollapsible.classList.remove('navbar-shrink')
+            navbarCollapsible.classList.remove('navbar-shrink');
+            brand.classList.add('filter-invert');
+            menu.classList.add('filter-invert');
         } else {
-            navbarCollapsible.classList.add('navbar-shrink')
+            navbarCollapsible.classList.add('navbar-shrink');
+            brand.classList.remove('filter-invert');
+            menu.classList.remove('filter-invert');
         }
 
     };
