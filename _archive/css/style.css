@@ -158,7 +158,6 @@ section {
 box-shadow: 5px 5px 0px 0px #0C0D0D;
 }
 
-
 .profile {
   border-radius: 100px 100px 100px 0;
 }
@@ -188,4 +187,12 @@ MOBILE
     /* background-color: #FFFFFF; */
     border-bottom: none !important;
   }
+  #mainNav.navbar-shrink {
+    color: #0C0D0D !important;
+    background-color: #FFFFFF;
+  }
+  .navbar-brand {
+    margin-left: 1.5rem;
+  }
+
 }
