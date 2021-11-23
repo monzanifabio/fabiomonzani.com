@@ -213,5 +213,8 @@ MOBILE
   video {
     display: none;
   }
+  .desktop-only {
+    display: none;
+  }
 
 }
