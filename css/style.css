@@ -145,7 +145,7 @@ section {
   margin-top: 5rem;
   padding-top: 4rem;
 }
-.squiggle {
+/* .squiggle {
   background-image: url('../img/squiggle.svg');
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -159,10 +159,37 @@ section {
 }
 
 .underline {
-  background-image: url('../img/underline.svg');
+  background-image: url('../img/underline-stroke.svg');
   background-position: bottom left;
   background-repeat: no-repeat;
+} */
+#underline {
+  position: relative;
+  top: 26px;
+  left: -142px;
 }
+#circle {
+  position: relative;
+  top: 2px;
+  left: -192px;
+}
+#squiggle {
+  position: relative;
+  top: 26px;
+  left: -160px;
+}
+.stroke path {
+  stroke-dasharray: 450px;
+  stroke-dashoffset: 450px;
+  animation: line-anim 0.5s ease-in-out forwards 0.5s;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 
 .download-box {
   -webkit-box-shadow: 5px 5px 0px 0px #0C0D0D;
