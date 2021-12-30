@@ -47,6 +47,10 @@ a:hover {
   color: #0C0D0D;
   text-decoration: line-through;
 }
+.small {
+  font-size: 0.8rem;
+  color: #adb5bd;
+}
 
 /* =============================================================================
 COLORS
@@ -210,6 +214,30 @@ FOOTER
 
 footer .container a img {
   vertical-align: sub !important;
+}
+
+/* =============================================================================
+MODALS
+============================================================================= */
+
+.modal-header {
+  border-bottom: none;
+}
+
+/* =============================================================================
+COVERS
+============================================================================= */
+.cover {
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+.samlabs-cover {
+  background-image: url('../img/samlabs-cover.png');
+}
+
+.podpoint-cover {
+  background-image: url('../img/podpoint-cover.png');
 }
 
 
