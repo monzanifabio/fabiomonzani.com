@@ -64,6 +64,15 @@ COLORS
   color: #FFFFFF;
 }
 
+.read-more {
+  color: #64a19d;
+}
+
+.read-more:hover {
+  color: #64a19d;
+  text-decoration: line-through;
+}
+
 /* =============================================================================
 NAVBAR
 ============================================================================= */
@@ -342,6 +351,10 @@ MOBILE
 
   .desktop-only {
     display: none !important;
+  }
+
+  .mobile-only {
+    display: block !important;
   }
 
   footer {
