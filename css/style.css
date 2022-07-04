@@ -50,7 +50,6 @@ a {
 
 a:hover {
   color: #0C0D0D;
-  text-decoration: line-through;
 }
 
 .small {
@@ -66,12 +65,18 @@ COLORS
 }
 
 .read-more {
-  color: #64a19d;
+  color: #0C0D0D;
+  text-decoration: none;
+  background-image: linear-gradient(transparent calc(100% - 1px), #0C0D0D 1px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
 }
 
 .read-more:hover {
-  color: #64a19d;
-  text-decoration: line-through;
+  color: #0C0D0D;
+  background-size: 100% 100%;
 }
 
 /* =============================================================================
