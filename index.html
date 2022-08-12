@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Fabio Monzani</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0C0D0D">
 
   <!-- Custom fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,6 @@
   <link rel="shortcut icon" href="favicon/favicon.ico">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -77,8 +77,8 @@
 
       <!-- Pod Point -->
       <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-4">
-          <img src="img/pod-point-logo.svg" width="100">
+        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
+          <img class="img-fluid" src="img/pod-point-logo.svg" width="100">
         </div>
         <div class="">
           <h3>Pod Point</h3>
@@ -95,8 +95,8 @@
 
       <!-- Loki code -->
       <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-4">
-          <img src="img/lokicode.svg" width="100">
+        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
+          <img class="img-fluid" src="img/lokicode.svg" width="100">
         </div>
         <div class="">
           <h3>Loki Code</h3>
@@ -108,8 +108,8 @@
 
       <!-- SAM Labs -->
       <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-4">
-          <img src="img/samlabs.svg" class="" width="100">
+        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
+          <img class="img-fluid" src="img/samlabs.svg" class="" width="100">
         </div>
         <div class="">
           <h3>SAM Labs</h3>
@@ -130,8 +130,8 @@
 
       <!-- ORDERLY -->
       <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-4">
-          <img src="img/orderly.svg" width="100">
+        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
+          <img class="img-fluid" src="img/orderly.svg" width="100">
         </div>
         <div class="">
           <h3>ORDERLY</h3>
@@ -147,8 +147,8 @@
 
       <!-- Rover Stay Over -->
       <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-4">
-          <img src="img/rso.svg" width="100">
+        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
+          <img class="img-fluid" src="img/rso.svg" width="100">
         </div>
         <div class="">
           <h3>Rover Stay Over</h3>
@@ -176,8 +176,8 @@
 
       <!-- Mockreate -->
       <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-4">
-          <img src="img/mockreate.svg" width="100">
+        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
+          <img class="img-fluid" src="img/mockreate.svg" width="100">
         </div>
         <div class="">
           <h3>Mockreate</h3>
@@ -197,8 +197,8 @@
 
       <!-- Cryptofonts -->
       <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-4">
-          <img src="img/cryptofonts.svg" width="100">
+        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
+          <img class="img-fluid" src="img/cryptofonts.svg" width="100">
         </div>
         <div class="">
           <h3>Cryptofonts</h3>
@@ -219,8 +219,8 @@
 
       <!-- Uniswap -->
       <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-4">
-          <img src="img/uniswap.svg" width="100">
+        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
+          <img class="img-fluid" src="img/uniswap.svg" width="100">
         </div>
         <div class="">
           <h3>Uniswap Unisocks Exchange V2</h3>
@@ -234,8 +234,8 @@
 
       <!-- 3D marketplaces -->
       <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-4">
-          <img src="img/3dlogoes.svg" width="100">
+        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
+          <img class="img-fluid" src="img/3dlogoes.svg" width="100">
         </div>
         <div class="">
           <h3>Turbosquid - Envato - CGTrader</h3>
@@ -348,6 +348,10 @@
     observer.observe(document.querySelector('.squiggle'));
     observer.observe(document.querySelector('.circle'));
     observer.observe(document.querySelector('.underline'));
+
+    window.onpopstate = function() {
+       $('.modal').modal('hide');
+    }; history.pushState({}, '');
   </script>
 
 </body>
