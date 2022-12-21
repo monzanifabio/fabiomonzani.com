@@ -29,7 +29,7 @@
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Fabio Monzani</a>
+        <a class="navbar-brand text-bold" href="#">Fabio Monzani</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -42,69 +42,128 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
+          <div class="d-flex row w-100 justify-content-end">
+            <div class="col-12 col-md-2 p-0 p-md-2">
+              <a class="nav-link" href="#works">Works</a>
+            </div>
+            <div class="col-12 col-md-2 p-0 p-md-2">
+              <a class="nav-link" href="#projects">Projects</a>
+            </div>
+            <div class="col-12 col-md-2 p-0 p-md-2">
+              <a class="nav-link" href="#about">About</a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
 
-    <div class="header">
+    <div class="header d-flex flex-column justify-content-end">
       <h1 class="header-title">Fabio Monzani</h1>
-    </div>
-
-    <div class="container-fluid">
-      <div class="d-flex justify-content-between">
-        <h2>UX/UI Designer</h2>
-        <h2>Illustrator</h2>
-        <h2>Logo designer</h2>
-        <h2>3D Artist</h2>
+      <div class="container-fluid border-bottom border-black py-3 bg-light">
+        <div class="d-flex flex-column flex-sm-row justify-content-between">
+          <h2>UX/UI Designer</h2>
+          <h2>Illustrator</h2>
+          <h2>Logo designer</h2>
+          <h2>3D Artist</h2>
+        </div>
       </div>
     </div>
 
-    <section id="works" class="container-fluid">
-      <h3>Works</h3>
+    <section id="works" class="container-fluid pt-5 mt-5">
+      <h2 class="mb-4">Works</h2>
 
-      <img src="" alt="" />
-      <div class="row">
-        <div class="col-3">
-          <div>
-            <ul>
-              <li>Company</li>
-              <li>SAM Labs</li>
+      <!-- Pod Point -->
+      <a href="#" data-bs-toggle="modal" data-bs-target="#podpointModal">
+        <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/podpoint-cover.png')">
+          <img src="img/pod-point-logo-white.svg" width="160" alt="" />
+        </div>
+      </a>
+      <div class="row mb-5">
+        <div class="col-12 col-md-3">
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Company</li>
+              <li>Pod Point</li>
             </ul>
           </div>
-          <div>
-            <ul>
-              <li>Role</li>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Role</li>
               <li>UX/UI Designer</li>
             </ul>
           </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Responsabilities</li>
+              <li>UX/UI designer</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Year</li>
+              <li>2020 - Ongoing</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          <p>
+            Pod Point is a leading UK provider of charging infrastructure for electric vehicles. It provides charging units for home,
+            business and public use. My main role as Lead UX/UI designer here at Pod Point is to maintain the existing products, like the
+            Pod Point App and services while working on new features and creating the products that are going to shape the future of the
+            company. As electric vehicles keep rising in popularity, so is demand for charging infrastructure and our products, which always
+            offer a challenging experience when researching how to shape the future of a fairly new industry. Talking and listening to user
+            needs and feedback has been key in the creation and development of new products, while balancing the current industry tech
+            limitations and expanding styling and brand guidelines. Everyday working at Pod Point has been a full dive into an ever changing
+            industry that still has a lot of complexities with a steep learning curve.
+          </p>
           <div>
-            <ul>
-              <li>Responsabilities</li>
+            <div class="d-flex justify-content-end mt-4">
+              <a class="d-flex align-items-center" href="#" data-bs-toggle="modal" data-bs-target="#podpointModal">
+                <h3 class="me-2">Read more</h3>
+                <img src="img/arrow-right.svg" height="20" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SAM Labs -->
+      <a href="#" data-bs-toggle="modal" data-bs-target="#samlabsModal">
+        <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/samlabs-cover.png')">
+          <img src="img/samlabs-logo-white.svg" width="160" alt="" />
+        </div>
+      </a>
+      <div class="row mb-5">
+        <div class="col-12 col-md-3">
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Company</li>
+              <li>SAM Labs</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Role</li>
+              <li>UX/UI Designer</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Responsabilities</li>
               <li>UX/UI designer</li>
               <li>Illustrator</li>
               <li>Web Design</li>
               <li>Frontend developer</li>
             </ul>
           </div>
-          <div>
-            <ul>
-              <li>Year</li>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Year</li>
               <li>2018 - 2020</li>
             </ul>
           </div>
         </div>
-        <div class="col-9">
+        <div class="col-12 col-md-9">
           <p>
             SAM Labs is an EdTech company that provides software, hardware and content to teachers, creating the necessary confidence for
             teaching STEAM and coding to kids. My main role as UX/UI designer was to improve and redesign SAM Space, the flagship app for
@@ -115,11 +174,11 @@
             departments, like content and manufacture, to bring the same user experience across the company products.
           </p>
           <div>
-            <div class="d-flex justify-content-end">
-              <a class="d-flex align-items-center" href=""
-                ><h3 class="me-2">Read more</h3>
-                <img src="img/arrow-right.svg" height="20" alt=""
-              /></a>
+            <div class="d-flex justify-content-end mt-4">
+              <a class="d-flex align-items-center" href="" data-bs-toggle="modal" data-bs-target="#samlabsModal">
+                <h3 class="me-2">Read more</h3>
+                <img src="img/arrow-right.svg" height="20" alt="" />
+              </a>
             </div>
           </div>
         </div>
@@ -128,11 +187,72 @@
 
     <hr />
 
-    <section id="projects" class="container-fluid">
-      <h3>Projects</h3>
+    <section id="projects" class="container-fluid pt-5 mt-5">
+      <h2 class="mb-4">Projects</h2>
       <div class="row gx-3 gy-1">
-        <div class="col-6">
-          <div class="bg-dark">
+        <div class="col-md-6 col-12">
+          <div
+            class="project-card d-flex flex-column justify-content-between mb-3 p-3"
+            style="background-image: url('/img/mockreate-cover.png')"
+          >
+            <ul class="list-unstyled">
+              <li class="text-bold">Project name</li>
+              <li>Mockreate</li>
+            </ul>
+            <img src="img/mockreate-logo.svg" width="100" alt="" />
+          </div>
+          <p>
+            Mockreate is a Figma plugin to generate random data quickly to fill tables and designs in general. With Mockreate you can choose
+            from default datasets, random math and import your custom JSON data.
+          </p>
+          <ul class="list-inline my-4">
+            <li class="list-inline-item me-4">
+              <a href="https://monzanifabio.github.io/figma-mockreate/" target="_blank"
+                >Website
+                <img src="img/arrow-up-right.svg" alt="" />
+              </a>
+            </li>
+            <li class="list-inline-item me-4">
+              <a href="https://www.figma.com/community/plugin/1096384653667384513" target="_blank"
+                >Figma
+                <img src="img/arrow-up-right.svg" alt="" />
+              </a>
+            </li>
+            <li class="list-inline-item me-4">
+              <a
+                href="https://www.producthunt.com/posts/mockreate?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mockreate"
+                target="_blank"
+                >ProductHunt
+                <img src="img/arrow-up-right.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <div
+            class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3"
+            style="background-image: url('/img/placeholder.png')"
+          >
+            <ul class="list-unstyled">
+              <li class="text-bold">Project name</li>
+              <li>Mockreate</li>
+            </ul>
+            <img src="img/cryptofonts-logo.svg" width="100" alt="" />
+          </div>
+          <p>Cryptofonts is the leading website for beautiful and crisp cryptocurrency webfont, icons and SVG.</p>
+          <ul class="list-inline my-4">
+            <li class="list-inline-item me-4">
+              <a href="">Link 1 <img src="img/arrow-up-right.svg" alt="" /></a>
+            </li>
+            <li class="list-inline-item me-4">
+              <a href="">Link 2 <img src="img/arrow-up-right.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-6 col-12">
+          <div class="bg-dark mb-3">
             <p>
               SAM Labs is an EdTech company that provides software, hardware and content to teachers, creating the necessary confidence for
               teaching STEAM and coding to kids. My main role as UX/UI designer was to improve and redesign SAM Space, the flagship app for
@@ -147,52 +267,26 @@
             Mockreate is a Figma plugin to generate random data quickly to fill tables and designs in general. With Mockreate you can choose
             from default datasets, random math and import your custom JSON data.
           </p>
-          <ul class="list-inline">
-            <li class="list-inline-item">
+          <ul class="list-inline my-4">
+            <li class="list-inline-item me-4">
               <a href="">Link 1 <img src="img/arrow-up-right.svg" alt="" /></a>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item me-4">
               <a href="">Link 2 <img src="img/arrow-up-right.svg" alt="" /></a>
             </li>
           </ul>
         </div>
-        <div class="col-6">
-          <div class="bg-dark">
-            <p>
-              SAM Labs is an EdTech company that provides software, hardware and content to teachers, creating the necessary confidence for
-              teaching STEAM and coding to kids. My main role as UX/UI designer was to improve and redesign SAM Space, the flagship app for
-              iOS, Android, Windows and Chromebook. While doing that, I had to keep in mind existing users, devices and content designed to
-              be working with the app. At the same time, bluetooth hardware blocks needed to be easy to recognise and pair to the device,
-              creating a seamless and “magic” experience. Talking to teachers and users in general to collect data and research alongside
-              our UX researcher was one of the main task during the design process. I also had the opportunity to touch into different
-              departments, like content and manufacture, to bring the same user experience across the company products.
-            </p>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="bg-dark">
-            <p>
-              SAM Labs is an EdTech company that provides software, hardware and content to teachers, creating the necessary confidence for
-              teaching STEAM and coding to kids. My main role as UX/UI designer was to improve and redesign SAM Space, the flagship app for
-              iOS, Android, Windows and Chromebook. While doing that, I had to keep in mind existing users, devices and content designed to
-              be working with the app. At the same time, bluetooth hardware blocks needed to be easy to recognise and pair to the device,
-              creating a seamless and “magic” experience. Talking to teachers and users in general to collect data and research alongside
-              our UX researcher was one of the main task during the design process. I also had the opportunity to touch into different
-              departments, like content and manufacture, to bring the same user experience across the company products.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
 
-    <section id="about" class="container-fluid bg-dark py-5">
-      <h3>About</h3>
+    <section id="about" class="container-fluid py-5 mt-5">
+      <h2 class="mb-4">About</h2>
       <div class="row">
-        <div class="col-4">
-          <img src="" alt="" />
+        <div class="col-12 col-md-4">
+          <img src="img/profile-pic.png" class="img-fluid mb-5" alt="" />
         </div>
-        <div class="col-8">
-          <h3>Hello.</h3>
+        <div class="col-12 col-md-8">
+          <h2 class="text-medium">Hello.</h2>
           <p>
             I have been designing and developing user experiences and interfaces for over 10 years. I live and work in London, where I
             create visuals compelling and user-friendly interfaces, using the latest tools and technologies. With a background in multiple
@@ -200,40 +294,88 @@
             solution for complex problems. Focused on creating the right solution across all platform and devices aiming to create the best
             User Experience in response of specific needs.
           </p>
-          <ul class="list-inline">
-            <li class="list-inline-item">
-              <a href="">UX/UI Portfolio</a>
-              <img src="img/arrow-down.svg" alt="" />
-            </li>
-            <li class="list-inline-item">
-              <a href="">CV</a>
-              <img src="img/arrow-down.svg" alt="" />
-            </li>
-          </ul>
+          <div class="row gx-4 mt-4">
+            <div class="col-12 col-md-3">
+              <a
+                href="docs/FabioMonzani_Design_Portfolio_2019-22.pdf"
+                target="_blank"
+                class="d-flex justify-content-between align-items-center border-top border-bottom py-1"
+              >
+                <p>UX/UI Portfolio</p>
+                <img src="img/arrow-down.svg" alt="" height="18" />
+              </a>
+            </div>
+            <div class="col-12 col-md-3">
+              <a
+                href="docs/FabioMonzani_UXUI_CV2020.pdf"
+                target="_blank"
+                class="d-flex justify-content-between align-items-center border-top border-bottom py-1"
+              >
+                <p>CV</p>
+                <img src="img/arrow-down.svg" alt="" height="18" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <footer class="container-fluid bg-dark">
-      <div class="d-flex justify-content-end">
+    <footer class="container-fluid py-5">
+      <div class="d-flex justify-content-center justify-content-md-end">
         <ul class="list-inline">
           <li class="list-inline-item me-5">
-            <a href="">LinkedIn</a>
-            <img class="ms-2" src="img/arrow-up-right.svg" alt="" />
+            <a href="https://www.linkedin.com/in/fabiomonzani/" target="_blank">LinkedIn</a>
+            <img class="ms-2" src="img/arrow-up-right-accent.svg" alt="" />
           </li>
           <li class="list-inline-item me-5">
-            <a href="">Github</a>
-            <img class="ms-2" src="img/arrow-up-right.svg" alt="" />
+            <a href="https://github.com/monzanifabio" target="_blank">Github</a>
+            <img class="ms-2" src="img/arrow-up-right-accent.svg" alt="" />
           </li>
           <li class="list-inline-item">
-            <a href="">Email</a>
-            <img class="ms-2" src="img/arrow-up-right.svg" alt="" />
+            <a href="mailto:monzani.fabio@icloud.com" target="_blank">Email</a>
+            <img class="ms-2" src="img/arrow-up-right-accent.svg" alt="" />
           </li>
         </ul>
       </div>
     </footer>
 
+    <!-- Modal -->
+    <div id="modals"></div>
+    <!-- <div class="modal fade" id="workModal" tabindex="-1" aria-labelledby="workModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="workModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">...</div>
+        </div>
+      </div>
+    </div> -->
+
     <!-- JavaScript Bundle with Popper -->
     <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      window.addEventListener("load", (event) => {
+        const modals = document.getElementById("modals");
+
+        fetch("./projects/podpoint.html")
+          .then((response) => {
+            return response.text();
+          })
+          .then((data) => {
+            modals.innerHTML += data;
+          });
+
+        fetch("./projects/samlabs.html")
+          .then((response) => {
+            return response.text();
+          })
+          .then((data) => {
+            modals.innerHTML += data;
+          });
+      });
+    </script>
   </body>
 </html>
