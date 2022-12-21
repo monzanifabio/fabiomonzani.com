@@ -41,7 +41,7 @@ a:hover {
 .text-bold {
   font-weight: 700;
 }
-.text-white {
+.text-neutral {
   color: var(--primary-bg);
 }
 
