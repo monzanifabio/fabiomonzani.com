@@ -69,7 +69,7 @@
       </div>
     </div>
 
-    <section id="works" class="container-fluid pt-5 mt-5">
+    <section id="works" class="container pt-5 mt-5">
       <h2 class="mb-4">Works</h2>
 
       <!-- Pod Point -->
@@ -222,7 +222,14 @@
           </div>
         </div>
         <div class="col-12 col-md-9">
-          <p>ORDERLY is the all-in-one inventory solution to manage every ordering needs for the modern hospitality business.</p>
+          <p>
+            ORDERLY is a Sydney-based startup dedicated to solving the problem of an all-in-one inventory solution to manage every ordering
+            need for the modern hospitality business. Most restaurants and hospitality businesses across the industry still use very
+            antiquated methods for collecting orders, like fax machines and pen and paper to do stock and inventory. The goal was to create
+            an integrated platform targeted to the broad hospitality industry to manage products, providers and make orders and stocks of
+            new supplies easy and seamless. The entire project including the MVP launch was kept to a 3 months minimum in which I had to
+            work around the clock to carry out all the design processes that are included below.
+          </p>
           <div>
             <div class="d-flex justify-content-end mt-4">
               <a class="d-flex align-items-center" href="" data-bs-toggle="modal" data-bs-target="#orderlyModal">
@@ -287,7 +294,7 @@
 
     <hr />
 
-    <section id="projects" class="container-fluid pt-5 mt-5">
+    <section id="projects" class="container pt-5 mt-5">
       <h2 class="mb-4">Projects</h2>
       <div class="row gx-3 gy-1">
         <!-- Mockreate -->
@@ -383,49 +390,51 @@
       </div>
     </section>
 
-    <section id="about" class="container-fluid py-5 mt-5">
-      <h2 class="mb-4">About</h2>
-      <div class="row">
-        <div class="col-12 col-md-4">
-          <img src="img/profile-pic.png" class="img-fluid mb-5" alt="" />
-        </div>
-        <div class="col-12 col-md-8">
-          <h2 class="text-medium">Hello.</h2>
-          <p>
-            I have been designing and developing user experiences and interfaces for over 10 years. I live and work in London, where I
-            create visuals compelling and user-friendly interfaces, using the latest tools and technologies. With a background in multiple
-            industries and countries, I am passionate about designing functional products with an eye for details striving to find simple
-            solution for complex problems. Focused on creating the right solution across all platform and devices aiming to create the best
-            User Experience in response of specific needs.
-          </p>
-          <div class="row gx-4 mt-4">
-            <div class="col-12 col-md-3">
-              <a
-                href="docs/FabioMonzani_Design_Portfolio_2019-22.pdf"
-                target="_blank"
-                class="d-flex justify-content-between align-items-center border-top border-bottom py-1"
-              >
-                <p>UX/UI Portfolio</p>
-                <img src="img/arrow-down.svg" alt="" height="18" />
-              </a>
-            </div>
-            <div class="col-12 col-md-3">
-              <a
-                href="docs/FabioMonzani_UXUI_CV2020.pdf"
-                target="_blank"
-                class="d-flex justify-content-between align-items-center border-top border-bottom py-1"
-              >
-                <p>CV</p>
-                <img src="img/arrow-down.svg" alt="" height="18" />
-              </a>
+    <section id="about" class="py-5 mt-5">
+      <div class="container">
+        <h2 class="mb-4">About</h2>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="img/profile-pic.png" class="img-fluid mb-5" alt="" />
+          </div>
+          <div class="col-12 col-md-8">
+            <h2 class="text-medium">Hello.</h2>
+            <p>
+              I have been designing and developing user experiences and interfaces for over 10 years. I live and work in London, where I
+              create visuals compelling and user-friendly interfaces, using the latest tools and technologies. With a background in multiple
+              industries and countries, I am passionate about designing functional products with an eye for details striving to find simple
+              solution for complex problems. Focused on creating the right solution across all platform and devices aiming to create the
+              best User Experience in response of specific needs.
+            </p>
+            <div class="row gx-4 mt-4">
+              <div class="col-12 col-md-3">
+                <a
+                  href="docs/FabioMonzani_Design_Portfolio_2019-22.pdf"
+                  target="_blank"
+                  class="d-flex justify-content-between align-items-center border-top border-bottom py-1"
+                >
+                  <p>UX/UI Portfolio</p>
+                  <img src="img/arrow-down.svg" alt="" height="18" />
+                </a>
+              </div>
+              <div class="col-12 col-md-3">
+                <a
+                  href="docs/FabioMonzani_UXUI_CV2020.pdf"
+                  target="_blank"
+                  class="d-flex justify-content-between align-items-center border-top border-bottom py-1"
+                >
+                  <p>CV</p>
+                  <img src="img/arrow-down.svg" alt="" height="18" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="container-fluid py-5">
-      <div class="d-flex justify-content-center justify-content-md-end">
+    <footer class="py-5">
+      <div class="d-flex justify-content-center justify-content-md-end container">
         <ul class="list-inline">
           <li class="list-inline-item me-5">
             <a href="https://www.linkedin.com/in/fabiomonzani/" target="_blank">LinkedIn</a>
@@ -473,6 +482,14 @@
           });
 
         fetch("./projects/samlabs.html")
+          .then((response) => {
+            return response.text();
+          })
+          .then((data) => {
+            modals.innerHTML += data;
+          });
+
+        fetch("./projects/orderly.html")
           .then((response) => {
             return response.text();
           })
