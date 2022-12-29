@@ -59,7 +59,7 @@
 
     <div class="header d-flex flex-column justify-content-end">
       <h1 class="header-title">Fabio Monzani</h1>
-      <div class="container-fluid border-bottom border-black py-3 bg-light">
+      <div class="container-fluid border-bottom border-black py-3 bg-neutral">
         <div class="d-flex flex-column flex-sm-row justify-content-between">
           <h2>UX/UI Designer</h2>
           <h2>Illustrator</h2>
@@ -307,8 +307,13 @@
               <li class="text-bold">Project name</li>
               <li>Mockreate</li>
             </ul>
-            <img src="img/mockreate-logo.svg" width="100" alt="" />
+            <img src="img/mockreate-logo.svg" width="60" alt="" />
           </div>
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li class="text-bold">Type</li>
+            <li>Personal</li>
+          </ul>
+          <hr />
           <p>
             Mockreate is a Figma plugin to generate random data quickly to fill tables and designs in general. With Mockreate you can choose
             from default datasets, random math and import your custom JSON data.
@@ -338,52 +343,56 @@
         </div>
         <!-- Cryptofonts -->
         <div class="col-md-6 col-12">
-          <div
-            class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3"
-            style="background-image: url('/img/placeholder.png')"
-          >
+          <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
+            <video src="/video/cryptofonts.mp4" autoplay loop muted></video>
             <ul class="list-unstyled">
               <li class="text-bold">Project name</li>
               <li>Cryptofonts</li>
             </ul>
-            <img src="img/cryptofonts-logo.svg" width="100" alt="" />
+            <img src="img/cryptofonts-logo.svg" width="60" alt="" />
           </div>
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li class="text-bold">Type</li>
+            <li>Open Source</li>
+          </ul>
+          <hr />
           <p>
             Cryptofonts is the leading website for open-source, crisp cryptocurrency webfont, icons and SVG used by leading industry
             providers in the Web3 space.
           </p>
           <ul class="list-inline my-4">
             <li class="list-inline-item me-4">
-              <a href="">Website <img src="img/arrow-up-right.svg" alt="" /></a>
+              <a href="https://cryptofonts.com/" target="_blank">Website <img src="img/arrow-up-right.svg" alt="" /></a>
             </li>
             <li class="list-inline-item me-4">
-              <a href="">ProductHunt <img src="img/arrow-up-right.svg" alt="" /></a>
+              <a href="https://www.producthunt.com/products/cryptofonts#cryptofonts-2" target="_blank"
+                >ProductHunt <img src="img/arrow-up-right.svg" alt=""
+              /></a>
             </li>
           </ul>
         </div>
-
+        <!-- Molteni kitchen -->
         <div class="col-md-6 col-12">
-          <div class="bg-dark mb-3">
-            <p>
-              SAM Labs is an EdTech company that provides software, hardware and content to teachers, creating the necessary confidence for
-              teaching STEAM and coding to kids. My main role as UX/UI designer was to improve and redesign SAM Space, the flagship app for
-              iOS, Android, Windows and Chromebook. While doing that, I had to keep in mind existing users, devices and content designed to
-              be working with the app. At the same time, bluetooth hardware blocks needed to be easy to recognise and pair to the device,
-              creating a seamless and “magic” experience. Talking to teachers and users in general to collect data and research alongside
-              our UX researcher was one of the main task during the design process. I also had the opportunity to touch into different
-              departments, like content and manufacture, to bring the same user experience across the company products.
-            </p>
+          <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
+            <video src="/video/molteni-kitchen.mp4" autoplay loop muted></video>
+            <ul class="list-unstyled">
+              <li class="text-bold">Project name</li>
+              <li>Molteni Kitchens</li>
+            </ul>
           </div>
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li class="text-bold">Type</li>
+            <li>Client commission</li>
+          </ul>
+          <hr />
           <p>
-            Mockreate is a Figma plugin to generate random data quickly to fill tables and designs in general. With Mockreate you can choose
-            from default datasets, random math and import your custom JSON data.
+            A proof-of-concept for realtime 3D made in Unreal Engine for Molteni to explore VR and realtime features to better deliver and
+            improve customer experience.<br />
+            A collaboration with the Italian architect Simone Filippi.
           </p>
           <ul class="list-inline my-4">
             <li class="list-inline-item me-4">
-              <a href="">Link 1 <img src="img/arrow-up-right.svg" alt="" /></a>
-            </li>
-            <li class="list-inline-item me-4">
-              <a href="">Link 2 <img src="img/arrow-up-right.svg" alt="" /></a>
+              <a href="" data-bs-toggle="modal" data-bs-target="#molteniModal">Showcase <img src="img/arrow-up-right.svg" alt="" /></a>
             </li>
           </ul>
         </div>
@@ -454,17 +463,6 @@
 
     <!-- Modal -->
     <div id="modals"></div>
-    <!-- <div class="modal fade" id="workModal" tabindex="-1" aria-labelledby="workModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="workModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">...</div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- JavaScript Bundle with Popper -->
     <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -490,6 +488,14 @@
           });
 
         fetch("./projects/orderly.html")
+          .then((response) => {
+            return response.text();
+          })
+          .then((data) => {
+            modals.innerHTML += data;
+          });
+
+        fetch("./projects/molteni-kitchen.html")
           .then((response) => {
             return response.text();
           })

@@ -32,6 +32,10 @@ span {
   margin: 0 !important;
 }
 
+p {
+  line-height: 1.6;
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -55,17 +59,18 @@ a:hover {
 .text-neutral {
   color: var(--primary-bg);
 }
+.bg-neutral {
+  background-color: var(--primary-bg);
+}
+
+.grayscale {
+  filter: grayscale();
+}
 
 .navbar {
   background-color: var(--primary-color);
   border: none;
 }
-
-/* .nav-item {
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  margin-right: 20px !important;
-} */
 
 .nav-link {
   color: #000000;
@@ -84,7 +89,7 @@ a:hover {
   background-color: var(--primary-color);
 }
 .header-title {
-  line-height: 0.7;
+  line-height: 0.68;
   font-weight: 700;
   font-size: 15vw;
 }
@@ -113,6 +118,16 @@ a:hover {
 }
 .project-card:hover {
   filter: grayscale(0%);
+}
+
+.project-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .border-black {
@@ -153,4 +168,9 @@ footer ul li a:hover {
 
 .modal-content {
   background-color: var(--primary-bg);
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16/9;
 }
