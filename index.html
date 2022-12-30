@@ -60,10 +60,13 @@
     <div class="header d-flex flex-column justify-content-end">
       <h1 class="header-title">Fabio Monzani</h1>
       <div class="container-fluid border-bottom border-black py-3 bg-neutral">
-        <div class="d-flex flex-column flex-sm-row justify-content-between">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
           <h2>UX/UI Designer</h2>
+          <img src="img/asterisk.svg" height="20" alt="" />
           <h2>Illustrator</h2>
+          <img src="img/asterisk.svg" height="20" alt="" />
           <h2>Logo designer</h2>
+          <img src="img/asterisk.svg" height="20" alt="" />
           <h2>3D Artist</h2>
         </div>
       </div>
@@ -117,8 +120,8 @@
             industry that still has a lot of complexities with a steep learning curve.
           </p>
           <div>
-            <div class="d-flex justify-content-end mt-4">
-              <a class="d-flex align-items-center" href="#" data-bs-toggle="modal" data-bs-target="#podpointModal">
+            <div class="d-flex mt-4">
+              <a class="w-100 d-flex align-items-center justify-content-end" href="#" data-bs-toggle="modal" data-bs-target="#podpointModal">
                 <h3 class="me-2">Read more</h3>
                 <img src="img/arrow-right.svg" height="20" alt="" />
               </a>
@@ -174,8 +177,8 @@
             departments, like content and manufacture, to bring the same user experience across the company products.
           </p>
           <div>
-            <div class="d-flex justify-content-end mt-4">
-              <a class="d-flex align-items-center" href="" data-bs-toggle="modal" data-bs-target="#samlabsModal">
+            <div class="d-flex mt-4">
+              <a class="w-100 d-flex align-items-center justify-content-end" href="" data-bs-toggle="modal" data-bs-target="#samlabsModal">
                 <h3 class="me-2">Read more</h3>
                 <img src="img/arrow-right.svg" height="20" alt="" />
               </a>
@@ -185,7 +188,7 @@
       </div>
 
       <!-- ORDERLY -->
-      <a href="#" data-bs-toggle="modal" data-bs-target="#samlabsModal">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#orderlyModal">
         <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/orderly-cover.png')">
           <img src="img/orderly-logo-white.svg" width="160" alt="" />
         </div>
@@ -231,8 +234,8 @@
             work around the clock to carry out all the design processes that are included below.
           </p>
           <div>
-            <div class="d-flex justify-content-end mt-4">
-              <a class="d-flex align-items-center" href="" data-bs-toggle="modal" data-bs-target="#orderlyModal">
+            <div class="d-flex mt-4">
+              <a class="w-100 d-flex align-items-center justify-content-end" href="" data-bs-toggle="modal" data-bs-target="#orderlyModal">
                 <h3 class="me-2">Read more</h3>
                 <img src="img/arrow-right.svg" height="20" alt="" />
               </a>
@@ -242,11 +245,9 @@
       </div>
 
       <!-- Rover Stay Over -->
-      <a href="#" data-bs-toggle="modal" data-bs-target="#samlabsModal">
-        <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/orderly-cover.png')">
-          <img src="img/orderly-logo-white.svg" width="160" alt="" />
-        </div>
-      </a>
+      <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/rso-cover.png')">
+        <img src="img/rso-logo-white.svg" width="160" alt="" />
+      </div>
       <div class="row mb-5">
         <div class="col-12 col-md-3">
           <div class="mb-4">
@@ -281,12 +282,12 @@
             for your pet while you're away from home.
           </p>
           <div>
-            <div class="d-flex justify-content-end mt-4">
-              <a class="d-flex align-items-center" href="" data-bs-toggle="modal" data-bs-target="#rsoModal">
+            <!-- <div class="d-flex mt-4">
+              <a class="w-100 d-flex align-items-center justify-content-end" href="" data-bs-toggle="modal" data-bs-target="#rsoModal">
                 <h3 class="me-2">Read more</h3>
                 <img src="img/arrow-right.svg" height="20" alt="" />
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -341,6 +342,35 @@
             </li>
           </ul>
         </div>
+
+        <!-- Fanas -->
+        <div class="col-md-6 col-12">
+          <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
+            <video autoplay loop muted>
+              <source type="video/mp4" src="/video/fanas.mp4"></source>
+            </video>
+            <ul class="list-unstyled">
+              <li class="text-bold">Project name</li>
+              <li>Fanas</li>
+            </ul>
+            <img src="img/fanas-logo.svg" width="120" alt="" />
+          </div>
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li class="text-bold">Type</li>
+            <li>Client commission</li>
+          </ul>
+          <hr />
+          <p>
+            Fana's Italian Kitchen is an Italian restaurant and take-away located in Sydney offering a premium Italian experience and custom
+            menu options for catering and events of any size.
+          </p>
+          <ul class="list-inline my-4">
+            <li class="list-inline-item me-4">
+              <a href="https://fanas.com.au/" target="_blank">Website <img src="img/arrow-up-right.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+
         <!-- Cryptofonts -->
         <div class="col-md-6 col-12">
           <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
@@ -451,6 +481,10 @@
           </li>
           <li class="list-inline-item me-5">
             <a href="https://github.com/monzanifabio" target="_blank">Github</a>
+            <img class="ms-2" src="img/arrow-up-right-accent.svg" alt="" />
+          </li>
+          <li class="list-inline-item me-5">
+            <a href="https://medium.com/@fabiomonzani" target="_blank">Medium</a>
             <img class="ms-2" src="img/arrow-up-right-accent.svg" alt="" />
           </li>
           <li class="list-inline-item">
