@@ -31,7 +31,7 @@
       <div class="container-fluid">
         <a class="navbar-brand text-bold" href="#">Fabio Monzani</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler shadow-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -39,7 +39,15 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span>
+            <svg class="btn-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451.325 489.3">
+              <g transform="translate(-22.549 -3.2)">
+                <path d="M0,0H55V489.3H0Z" transform="translate(220.7 3.2)" />
+                <path d="M0,0H489.3V55H0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 22.641, 346.392)" />
+                <path d="M0,0H55V489.3H0Z" transform="matrix(0.5, -0.866, 0.866, 0.5, 22.549, 149.38)" />
+              </g>
+            </svg>
+          </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="d-flex row w-100 justify-content-end m-0">
@@ -121,7 +129,12 @@
           </p>
           <div>
             <div class="d-flex mt-4">
-              <a class="w-100 d-flex align-items-center justify-content-end" href="#" data-bs-toggle="modal" data-bs-target="#podpointModal">
+              <a
+                class="w-100 d-flex align-items-center justify-content-end"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#podpointModal"
+              >
                 <h3 class="me-2">Read more</h3>
                 <img src="img/arrow-right.svg" height="20" alt="" />
               </a>
@@ -346,12 +359,12 @@
         <!-- Fanas -->
         <div class="col-md-6 col-12">
           <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
-            <video autoplay loop muted>
-              <source type="video/mp4" src="/video/fanas.mp4"></source>
+            <video autoplay loop muted playsinline>
+              <source type="video/mp4" src="/video/fanas.mp4" />
             </video>
             <ul class="list-unstyled">
-              <li class="text-bold">Project name</li>
-              <li>Fanas</li>
+              <li class="text-bold text-neutral">Project name</li>
+              <li class="text-neutral">Fanas</li>
             </ul>
             <img src="img/fanas-logo.svg" width="120" alt="" />
           </div>
@@ -374,7 +387,7 @@
         <!-- Cryptofonts -->
         <div class="col-md-6 col-12">
           <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
-            <video src="/video/cryptofonts.mp4" autoplay loop muted></video>
+            <video src="/video/cryptofonts.mp4" autoplay loop muted playsinline></video>
             <ul class="list-unstyled">
               <li class="text-bold">Project name</li>
               <li>Cryptofonts</li>
@@ -404,7 +417,7 @@
         <!-- Molteni kitchen -->
         <div class="col-md-6 col-12">
           <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
-            <video src="/video/molteni-kitchen.mp4" autoplay loop muted></video>
+            <video src="/video/molteni-kitchen.mp4" autoplay loop muted playsinline></video>
             <ul class="list-unstyled">
               <li class="text-bold">Project name</li>
               <li>Molteni Kitchens</li>
@@ -446,7 +459,7 @@
               best User Experience in response of specific needs.
             </p>
             <div class="row gx-4 mt-4">
-              <div class="col-12 col-md-3">
+              <div class="col-12 col-md-6">
                 <a
                   href="docs/FabioMonzani_Design_Portfolio_2019-22.pdf"
                   target="_blank"
@@ -456,7 +469,7 @@
                   <img src="img/arrow-down.svg" alt="" height="18" />
                 </a>
               </div>
-              <div class="col-12 col-md-3">
+              <div class="col-12 col-md-6">
                 <a
                   href="docs/FabioMonzani_UXUI_CV2020.pdf"
                   target="_blank"

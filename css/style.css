@@ -57,6 +57,9 @@ a:hover {
 .text-bold {
   font-weight: 700;
 }
+.text-blend {
+  mix-blend-mode: difference;
+}
 .text-neutral {
   color: var(--primary-bg);
 }
@@ -71,6 +74,12 @@ a:hover {
 .navbar {
   background-color: var(--primary-color);
   border: none;
+}
+.navbar-toggler {
+  border-color: transparent;
+}
+.btn-menu {
+  height: 30px;
 }
 
 .nav-link {
