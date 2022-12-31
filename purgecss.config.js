@@ -1,4 +1,4 @@
 module.exports = {
-  content: ["*.html"],
-  css: ["vendors/bootstrap/css/bootstrap-utilities.css"],
+  content: ["*.html", "projects/*.html"],
+  css: ["vendors/bootstrap/css/bootstrap.css"],
 };
