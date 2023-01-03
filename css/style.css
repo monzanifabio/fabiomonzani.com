@@ -116,7 +116,7 @@ a:hover {
 }
 
 .work-card {
-  min-height: 350px;
+  min-height: 450px;
   max-height: 650px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -129,8 +129,7 @@ a:hover {
 }
 
 .project-card {
-  min-height: 350px;
-  max-height: 40vw;
+  aspect-ratio: 1/1;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -204,5 +203,11 @@ MOBILE
 @media (max-width: 768px) {
   p {
     font-size: 1.2rem;
+  }
+  .project-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 }
