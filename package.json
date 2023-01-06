@@ -1,0 +1,25 @@
+{
+  "name": "fabiomonzani.com",
+  "version": "3.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "purgecss -c purgecss.config.js -o css && csso --output ./css/style.min.css ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monzanifabio/fabiomonzani.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monzanifabio/fabiomonzani.com/issues"
+  },
+  "homepage": "https://github.com/monzanifabio/fabiomonzani.com#readme",
+  "dependencies": {
+    "csso-cli": "^4.0.1",
+    "purgecss": "^5.0.0"
+  }
+}

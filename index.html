@@ -1,359 +1,600 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabio Monzani | Portfolio</title>
 
-<head>
-  <meta charset="utf-8">
-  <title>Fabio Monzani</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0C0D0D">
+    <meta name="description" content="Product designer" />
 
-  <!-- Custom fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@500&display=swap" rel="stylesheet">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://fabiomonzani.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fabio Monzani" />
+    <meta property="og:description" content="Product designer" />
+    <meta property="og:image" content="https://fabiomonzani.com/img/preview.png" />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="vendors/bootstrap-5.1.3/css/bootstrap.min.css">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="fabiomonzani.com" />
+    <meta property="twitter:url" content="https://fabiomonzani.com" />
+    <meta name="twitter:title" content="Fabio Monzani" />
+    <meta name="twitter:description" content="Product designer" />
+    <meta name="twitter:image" content="https://fabiomonzani.com/img/preview.png" />
 
-  <!-- Custom styling -->
-  <link rel="stylesheet" href="css/style.css?=v1.1">
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="favicon/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
-</head>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="css/style.min.css" />
 
-<body>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand text-bold" href="#">Fabio Monzani</a>
+        <button
+          class="navbar-toggler shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span>
+            <svg class="btn-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451.325 489.3">
+              <g transform="translate(-22.549 -3.2)">
+                <path d="M0,0H55V489.3H0Z" transform="translate(220.7 3.2)" />
+                <path d="M0,0H489.3V55H0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 22.641, 346.392)" />
+                <path d="M0,0H55V489.3H0Z" transform="matrix(0.5, -0.866, 0.866, 0.5, 22.549, 149.38)" />
+              </g>
+            </svg>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex row w-100 justify-content-end m-0">
+            <div class="col-12 col-md-2 p-2">
+              <a class="nav-link" href="#works">Works</a>
+            </div>
+            <div class="col-12 col-md-2 p-2">
+              <a class="nav-link" href="#projects">Projects</a>
+            </div>
+            <div class="col-12 col-md-2 p-2">
+              <a class="nav-link" href="#about">About</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top desktop-only" id="mainNav">
-    <div class="container border-bottom p-0">
-      <a class="navbar-brand pb-3" href="#">
-        <img id="brand" class="filter-invert desktop-only" src="img/logo.svg" alt="" height="24">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <img id="menu" class="filter-invert" src="img/menu.svg" alt="" height="24">
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <div class="navbar-nav">
-          <a class="nav-link px-4" href="#works">Works</a>
-          <a class="nav-link px-4" href="#projects">Projects</a>
-          <a class="nav-link ps-4" href="#about">About</a>
+    <div class="header d-flex flex-column justify-content-end">
+      <h1 class="header-title">Fabio Monzani</h1>
+      <div class="container-fluid border-bottom border-black py-3 bg-neutral">
+        <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center">
+          <h2>UX/UI Designer</h2>
+          <img src="img/asterisk.svg" height="20" alt="" />
+          <h2>Illustrator</h2>
+          <img src="img/asterisk.svg" height="20" alt="" />
+          <h2>Logo designer</h2>
+          <img src="img/asterisk.svg" height="20" alt="" />
+          <h2>3D Artist</h2>
         </div>
       </div>
     </div>
-  </nav>
 
-  <div class="h-100 jumbotron d-flex align-items-center">
-    <video autoplay muted id="inky-video">
-      <source src="video/ink.mp4" type="video/mp4" />
-    </video>
-    <div class="white-gradient">
-    </div>
-    <div class="container p-5">
-      <h1 class="white">Fabio Monzani,</h1>
-      <h1 class="white">Senior UX/UI Designer</h1>
-      <!-- <p class="white">I have been designing and developing user experiences and interfaces for over 10 years.<br>
-        I live and work in London, where I create visuals compelling and user-friendly interfaces, using the latest tools and technologies.<br>
-        With a background in multiple industries and countries, I am passionate about designing functional products with an eye for details striving to find simple solution for complex problems.<br>
-        Focused on creating the right solution across all platform and devices aiming to create the best User Experience in response of specific needs. </p> -->
-    </div>
-  </div>
-
-
-  <div class="container">
-    <section id="works">
-      <h2 class="mb-4">Works
-        <svg xmlns="http://www.w3.org/2000/svg" id="squiggle" class="squiggle" width="167.573" height="10.121" viewBox="0 0 167.573 10.121">
-          <path id="Path_100" data-name="Path 100" d="M-2567.912,2760.741s3.892-4.425,13.515-5.7,8.836,6.84,17.508,7.218,13-6.219,20.3-7.218,11,8.98,21.825,8.952,10.029-9.2,21.031-8.952,10.028,3.292,15.976,5.7,13.784-5.294,19.627-5.7,4.694,6.22,12.183,7.218,24.23-7.218,24.23-7.218" transform="translate(2568.618 -2754.374)" fill="none" stroke="#1c1b3e" stroke-linecap="round" stroke-width="1" />
-        </svg>
-      </h2>
+    <section id="works" class="container pt-5 mt-5">
+      <h2 class="mb-4">Works</h2>
 
       <!-- Pod Point -->
-      <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
-          <img class="img-fluid" src="img/pod-point-logo.svg" width="100">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#podpointModal" data-target="podpointModal">
+        <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/podpoint-cover.png')">
+          <img src="img/pod-point-logo-white.svg" width="160" alt="" />
         </div>
-        <div class="">
-          <h3>Pod Point</h3>
-          <p>Pod Point is a leading UK provider of charging infrastructure for electric vehicles, based in London, England. It provides charging units for home, business and public use.<br>
-            <button type="button" class="btn read-more ps-0 pe-0" data-bs-toggle="modal" data-bs-target="#podpointModal">
-              <img src="img/finger.svg" alt="" height="16">
-              Read more...
-            </button>
+      </a>
+      <div class="row mb-5">
+        <div class="col-12 col-md-3">
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Company</li>
+              <li>Pod Point</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Role</li>
+              <li>UX/UI Designer</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Responsabilities</li>
+              <li>UX/UI designer</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Year</li>
+              <li>2020 - Ongoing</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          <p class="project-text">
+            Pod Point is a leading UK provider of charging infrastructure for electric vehicles. It provides charging units for home,
+            business and public use. My main role as Lead UX/UI designer here at Pod Point is to maintain the existing products, like the
+            Pod Point App and services while working on new features and creating the products that are going to shape the future of the
+            company. As electric vehicles keep rising in popularity, so is demand for charging infrastructure and our products, which always
+            offer a challenging experience when researching how to shape the future of a fairly new industry. Talking and listening to user
+            needs and feedback has been key in the creation and development of new products, while balancing the current industry tech
+            limitations and expanding styling and brand guidelines. Everyday working at Pod Point has been a full dive into an ever changing
+            industry that still has a lot of complexities with a steep learning curve.
           </p>
-          <span class="badge badge-role text-uppercase">UX/UI Design</span>
+          <div>
+            <div class="d-flex mt-4">
+              <a
+                class="w-100 d-flex align-items-center justify-content-end"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#podpointModal"
+                data-target="podpointModal"
+              >
+                <h3 class="me-2">Read more</h3>
+                <img src="img/arrow-right.svg" height="20" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <hr>
-
-      <!-- Loki code -->
-      <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
-          <img class="img-fluid" src="img/lokicode.svg" width="100">
-        </div>
-        <div class="">
-          <h3>Loki Code</h3>
-          <p>Loki Code is a no code solution for creating, debugging and deploying solidity smart contracts in simple and intuitive way.</p>
-          <span class="badge badge-role text-uppercase">Product Design</span>
-        </div>
-      </div>
-      <hr>
 
       <!-- SAM Labs -->
-      <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
-          <img class="img-fluid" src="img/samlabs.svg" class="" width="100">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#samlabsModal" data-target="samlabsModal">
+        <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/samlabs-cover.png')">
+          <img src="img/samlabs-logo-white.svg" width="160" alt="" />
         </div>
-        <div class="">
-          <h3>SAM Labs</h3>
-          <p>SAM Labs is an EdTech company that provides software, hardware and content to teachers, creating the necessary confidence for teaching STEAM and coding to kids.<br>
-            <button type="button" class="btn read-more ps-0 pe-0" data-bs-toggle="modal" data-bs-target="#samlabsModal">
-              <img src="img/finger.svg" alt="" height="16">
-              Read more...
-            </button>
+      </a>
+      <div class="row mb-5">
+        <div class="col-12 col-md-3">
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Company</li>
+              <li>SAM Labs</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Role</li>
+              <li>UX/UI Designer</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Responsabilities</li>
+              <li>UX/UI designer</li>
+              <li>Illustrator</li>
+              <li>Web Design</li>
+              <li>Frontend developer</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Year</li>
+              <li>2018 - 2020</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          <p class="project-text">
+            SAM Labs is an EdTech company that provides software, hardware and content to teachers, creating the necessary confidence for
+            teaching STEAM and coding to kids. My main role as UX/UI designer was to improve and redesign SAM Space, the flagship app for
+            iOS, Android, Windows and Chromebook. While doing that, I had to keep in mind existing users, devices and content designed to be
+            working with the app. At the same time, bluetooth hardware blocks needed to be easy to recognise and pair to the device,
+            creating a seamless and “magic” experience. Talking to teachers and users in general to collect data and research alongside our
+            UX researcher was one of the main task during the design process. I also had the opportunity to touch into different
+            departments, like content and manufacture, to bring the same user experience across the company products.
           </p>
-
-          <span class="badge badge-role text-uppercase">UX/UI Design</span>
-          <span class="badge badge-role text-uppercase">Illustrations</span>
-          <span class="badge badge-role text-uppercase">Web Design</span>
-          <span class="badge badge-role text-uppercase">Front End Development</span>
+          <div>
+            <div class="d-flex mt-4">
+              <a
+                class="w-100 d-flex align-items-center justify-content-end"
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#samlabsModal"
+                data-target="samlabsModal"
+              >
+                <h3 class="me-2">Read more</h3>
+                <img src="img/arrow-right.svg" height="20" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <hr>
 
       <!-- ORDERLY -->
-      <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
-          <img class="img-fluid" src="img/orderly.svg" width="100">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#orderlyModal" data-target="orderlyModal">
+        <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/orderly-cover.png')">
+          <img src="img/orderly-logo-white.svg" width="160" alt="" />
         </div>
-        <div class="">
-          <h3>ORDERLY</h3>
-          <p>ORDERLY is the all-in-one inventory solution to manage every ordering needs for the modern hospitality business.</p>
-          <span class="badge badge-role text-uppercase">UX/UI Design</span>
-          <span class="badge badge-role text-uppercase">Illustrations</span>
-          <span class="badge badge-role text-uppercase">Web Design</span>
-          <span class="badge badge-role text-uppercase">Front End Development</span>
-          <span class="badge badge-role text-uppercase">Branding</span>
+      </a>
+      <div class="row mb-5">
+        <div class="col-12 col-md-3">
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Company</li>
+              <li>ORDERLY</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Role</li>
+              <li>UX/UI Designer</li>
+              <li>Co-Founder</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Responsabilities</li>
+              <li>UX/UI designer</li>
+              <li>Illustrator</li>
+              <li>Web Design</li>
+              <li>Frontend developer</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Year</li>
+              <li>2016 - 2018</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          <p class="project-text">
+            ORDERLY is a Sydney-based startup dedicated to solving the problem of an all-in-one inventory solution to manage every ordering
+            need for the modern hospitality business. Most restaurants and hospitality businesses across the industry still use very
+            antiquated methods for collecting orders, like fax machines and pen and paper to do stock and inventory. The goal was to create
+            an integrated platform targeted to the broad hospitality industry to manage products, providers and make orders and stocks of
+            new supplies easy and seamless. The entire project including the MVP launch was kept to a 3 months minimum in which I had to
+            work around the clock to carry out all the design processes that are included below.
+          </p>
+          <div>
+            <div class="d-flex mt-4">
+              <a
+                class="w-100 d-flex align-items-center justify-content-end"
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#orderlyModal"
+                data-target="orderlyModal"
+              >
+                <h3 class="me-2">Read more</h3>
+                <img src="img/arrow-right.svg" height="20" alt="" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <hr>
 
       <!-- Rover Stay Over -->
-      <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
-          <img class="img-fluid" src="img/rso.svg" width="100">
+      <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/rso-cover.png')">
+        <img src="img/rso-logo-white.svg" width="160" alt="" />
+      </div>
+      <div class="row mb-5">
+        <div class="col-12 col-md-3">
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Company</li>
+              <li>Rover Stay Over</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Role</li>
+              <li>UX/UI Designer</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Responsabilities</li>
+              <li>UX/UI designer</li>
+              <li>Branding</li>
+            </ul>
+          </div>
+          <div class="mb-4">
+            <ul class="list-unstyled">
+              <li class="text-bold">Year</li>
+              <li>2016 - 2018</li>
+            </ul>
+          </div>
         </div>
-        <div class="">
-          <h3>Rover Stay Over</h3>
-          <p>Rover Stay Over is a new Sydney based startup for pet lovers and pet owners. Rover Stay Over finds a local trusted sitter to care for your pet while you're away from home.</p>
-          <span class="badge badge-role text-uppercase">UX/UI Design</span>
-          <span class="badge badge-role text-uppercase">Web Design</span>
-          <span class="badge badge-role text-uppercase">Branding</span>
+        <div class="col-12 col-md-9">
+          <p>
+            Rover Stay Over is a Sydney based startup for pet lovers and pet owners. Rover Stay Over finds a local trusted sitter to care
+            for your pet while you're away from home.
+          </p>
+          <div>
+            <!-- <div class="d-flex mt-4">
+              <a class="w-100 d-flex align-items-center justify-content-end" href="" data-bs-toggle="modal" data-bs-target="#rsoModal">
+                <h3 class="me-2">Read more</h3>
+                <img src="img/arrow-right.svg" height="20" alt="" />
+              </a>
+            </div> -->
+          </div>
         </div>
       </div>
-      <hr>
-
-      <a href="https://www.linkedin.com/in/fabiomonzani/" target="_blank" class="btn read-more ps-0 pe-0">
-        <img src="img/finger.svg" alt="" height="16">
-        More...
-      </a>
-
     </section>
 
-    <section id="projects">
-      <h2 class="mb-4">Projects
-        <svg xmlns="http://www.w3.org/2000/svg" id="circle" class="circle" width="169.888" height="78.326" viewBox="0 0 169.888 78.326">
-          <path id="Path_99" data-name="Path 99" d="M-2587.457,2725.122c6.04-1.993,21.22-41.831,89.566-40.809,61.351-.534,100.866,37.321,66.375,57.05s-78.919,26.747-110.622,13.2-34.367-41.365-17.1-65.278" transform="translate(2588.089 -2683.794)" fill="none" stroke="#0c0d0d" stroke-linecap="round" stroke-width="1" />
-        </svg>
-      </h2>
+    <hr />
 
-      <!-- Mockreate -->
-      <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
-          <img class="img-fluid" src="img/mockreate.svg" width="100">
-        </div>
-        <div class="">
-          <h3>Mockreate</h3>
-          <p>Mockreate is a Figma plugin to generate random data quickly to fill tables and designs in general.<br>
-            With Mockreate you can choose from default datasets, random math and import your custom JSON data.<br>
-            <a href="https://www.figma.com/community/plugin/1096384653667384513/Mockreate?ref=producthunt" target="_blank" class="btn read-more ps-0 pe-0">
-              <img src="img/finger.svg" alt="" height="16">
-              Get Mockreate
-            </a>
+    <section id="projects" class="container pt-5 mt-5">
+      <h2 class="mb-4">Projects</h2>
+      <div class="row gx-3 gy-1">
+        <!-- Mockreate -->
+        <div class="col-md-4 col-12">
+          <div
+            class="project-card d-flex flex-column justify-content-between mb-3 p-3"
+            style="background-image: url('/img/mockreate-cover.png')"
+          >
+            <ul class="list-unstyled">
+              <li class="text-bold">Project name</li>
+              <li>Mockreate</li>
+            </ul>
+            <img src="img/mockreate-logo.svg" width="60" alt="" />
+          </div>
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li class="text-bold">Type</li>
+            <li>Personal</li>
+          </ul>
+          <hr />
+          <p>
+            Mockreate is a Figma plugin to generate random data quickly to fill tables and designs in general. With Mockreate you can choose
+            from default datasets, random math and import your custom JSON data.
           </p>
-          <span class="badge badge-role text-uppercase">UX/UI Design</span>
-          <span class="badge badge-role text-uppercase">Front End Development</span>
-          <span class="badge badge-role text-uppercase">Branding</span>
+          <ul class="list-inline my-4">
+            <li class="list-inline-item me-4">
+              <a href="https://monzanifabio.github.io/figma-mockreate/" target="_blank"
+                >Website
+                <img src="img/arrow-up-right.svg" alt="" />
+              </a>
+            </li>
+            <li class="list-inline-item me-4">
+              <a href="https://www.figma.com/community/plugin/1096384653667384513" target="_blank"
+                >Figma
+                <img src="img/arrow-up-right.svg" alt="" />
+              </a>
+            </li>
+            <li class="list-inline-item me-4">
+              <a
+                href="https://www.producthunt.com/posts/mockreate?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mockreate"
+                target="_blank"
+                >ProductHunt
+                <img src="img/arrow-up-right.svg" alt="" />
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <hr>
 
-      <!-- Cryptofonts -->
-      <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
-          <img class="img-fluid" src="img/cryptofonts.svg" width="100">
+        <!-- Loki Code -->
+        <div class="col-md-4 col-12">
+          <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
+            <video autoplay loop muted playsinline>
+              <source type="video/mp4" src="/video/loki.mp4" />
+            </video>
+            <ul class="list-unstyled">
+              <li class="text-bold text-neutral">Project name</li>
+              <li class="text-neutral">Loki Code</li>
+            </ul>
+            <img src="img/loki-logo.svg" width="60" alt="" />
+          </div>
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li class="text-bold">Type</li>
+            <li>Product Designer</li>
+          </ul>
+          <hr />
+          <p>Loki.Code is the next generation Smart Contract development platform easy to use and open to everyone.</p>
+          <ul class="list-inline my-4">
+            <li class="list-inline-item me-4">
+              <a href="https://www.lokicode.io/" target="_blank">Website <img src="img/arrow-up-right.svg" alt="" /></a>
+            </li>
+          </ul>
         </div>
-        <div class="">
-          <h3>Cryptofonts</h3>
-          <p>Cryptofonts is the leading website for beautifil and crisp cryptocurrency webfont, icons and SVG.<br>
-            <a href="https://www.cryptofonts.com" target="_blank" class="btn read-more ps-0 pe-0">
-              <img src="img/finger.svg" alt="" height="16">
-              Visit Cryptofonts
-            </a>
+
+        <!-- Fanas -->
+        <div class="col-md-4 col-12">
+          <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
+            <video autoplay loop muted playsinline>
+              <source type="video/mp4" src="/video/fanas.mp4" />
+            </video>
+            <ul class="list-unstyled">
+              <li class="text-bold text-neutral">Project name</li>
+              <li class="text-neutral">Fanas</li>
+            </ul>
+            <img src="img/fanas-logo.svg" width="120" alt="" />
+          </div>
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li class="text-bold">Type</li>
+            <li>Client commission</li>
+          </ul>
+          <hr />
+          <p>
+            Fana's Italian Kitchen is an Italian restaurant and take-away located in Sydney offering a premium Italian experience and custom
+            menu options for catering and events of any size.
           </p>
-          <span class="badge badge-role text-uppercase">UX/UI Design</span>
-          <span class="badge badge-role text-uppercase">Illustrations</span>
-          <span class="badge badge-role text-uppercase">Web Design</span>
-          <span class="badge badge-role text-uppercase">Front End Development</span>
-          <span class="badge badge-role text-uppercase">Branding</span>
+          <ul class="list-inline my-4">
+            <li class="list-inline-item me-4">
+              <a href="https://fanas.com.au/" target="_blank">Website <img src="img/arrow-up-right.svg" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Cryptofonts -->
+        <div class="col-md-4 col-12">
+          <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
+            <video src="/video/cryptofonts.mp4" autoplay loop muted playsinline></video>
+            <ul class="list-unstyled">
+              <li class="text-bold">Project name</li>
+              <li>Cryptofonts</li>
+            </ul>
+            <img src="img/cryptofonts-logo.svg" width="60" alt="" />
+          </div>
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li class="text-bold">Type</li>
+            <li>Open Source</li>
+          </ul>
+          <hr />
+          <p>
+            Cryptofonts is the leading website for open-source, crisp cryptocurrency webfont, icons and SVG used by leading industry
+            providers in the Web3 space.
+          </p>
+          <ul class="list-inline my-4">
+            <li class="list-inline-item me-4">
+              <a href="https://cryptofonts.com/" target="_blank">Website <img src="img/arrow-up-right.svg" alt="" /></a>
+            </li>
+            <li class="list-inline-item me-4">
+              <a href="https://www.producthunt.com/products/cryptofonts#cryptofonts-2" target="_blank"
+                >ProductHunt <img src="img/arrow-up-right.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- Molteni kitchen -->
+        <div class="col-md-4 col-12">
+          <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
+            <video src="/video/molteni-kitchen.mp4" autoplay loop muted playsinline></video>
+            <ul class="list-unstyled">
+              <li class="text-bold">Project name</li>
+              <li>Molteni Kitchens</li>
+            </ul>
+          </div>
+          <ul class="list-unstyled d-flex justify-content-between">
+            <li class="text-bold">Type</li>
+            <li>Client commission</li>
+          </ul>
+          <hr />
+          <p>
+            A proof-of-concept for realtime 3D made in Unreal Engine for Molteni to explore VR and realtime features to better deliver and
+            improve customer experience.<br />
+            A collaboration with the Italian architect Simone Filippi.
+          </p>
+          <ul class="list-inline my-4">
+            <li class="list-inline-item me-4">
+              <a href="" data-bs-toggle="modal" data-bs-target="#molteniModal" data-target="molteniModal"
+                >Showcase <img src="img/arrow-up-right.svg" alt=""
+              /></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <hr>
-
-      <!-- Uniswap -->
-      <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
-          <img class="img-fluid" src="img/uniswap.svg" width="100">
-        </div>
-        <div class="">
-          <h3>Uniswap Unisocks Exchange V2</h3>
-          <p>The Uniswap Exchange is an experiment in tokenized socks.</p>
-          <span class="badge badge-role text-uppercase">UX/UI Design</span>
-          <span class="badge badge-role text-uppercase">Illustrations</span>
-          <span class="badge badge-role text-uppercase">Front End Development</span>
-        </div>
-      </div>
-      <hr>
-
-      <!-- 3D marketplaces -->
-      <div class="d-flex flex-column flex-sm-row mb-4">
-        <div class="logo-container rounded-2 d-flex align-items-center justify-content-center bg-dark me-4 p-3">
-          <img class="img-fluid" src="img/3dlogoes.svg" width="100">
-        </div>
-        <div class="">
-          <h3>Turbosquid - Envato - CGTrader</h3>
-          <p>Shaders and materials designer for leading marketplaces like Turbosquid and Envato 3D Ocean grossing more than 10k in sales.</p>
-          <span class="badge badge-role text-uppercase">3D Modelling</span>
-          <span class="badge badge-role text-uppercase">3D Rendering</span>
-          <span class="badge badge-role text-uppercase">Materials</span>
-          <span class="badge badge-role text-uppercase">Photography</span>
-        </div>
-      </div>
-      <hr>
-
     </section>
 
-    <section id="about">
-      <h2 class="mb-4">About
-        <svg xmlns="http://www.w3.org/2000/svg" id="underline" class="underline" width="135.607" height="8.933" viewBox="0 0 135.607 8.933">
-          <path id="Path_101" data-name="Path 101" d="M-2565.046,2748.878s43.574-1.631,81.47,0c21.9.942,36.027,1.721,44.329,2.228,5.572.34,8.173.543,8.173.543s-11.966-1.087-52.5,0-110.971.084-70.34,1.514,69.029,2.78,70.34,2.807" transform="translate(2566.635 -2747.556)" fill="none" stroke="#0c0d0d" stroke-linecap="round" stroke-width="1" />
-        </svg>
-      </h2>
-
-      <div class="d-flex flex-column flex-sm-row">
-        <div class="me-4">
-          <img class="img-fluid profile" src="img/profile.png" alt="">
-        </div>
-        <div class="flex-grow-4 ms-4">
-          <p>I have been designing and developing user experiences and interfaces for over 10 years.<br>
-            I live and work in London, where I create visuals compelling and user-friendly interfaces, using the latest tools and technologies.<br>
-            With a background in multiple industries and countries, I am passionate about designing functional products with an eye for details striving to find simple solution for complex problems.<br>
-            Focused on creating the right solution across all platform and devices aiming to create the best User Experience in response of specific needs.</p>
-
-          <div class="d-flex">
-            <div class="border rounded-2 border-dark w-100 me-2 p-2 download-box">
-              <p>UX/UI Design Portfolio 2022</p>
-              <a href="docs/FabioMonzani_Design_Portfolio_2019-22.pdf" target="_blank"><img src="img/arrow-to-bottom.svg" height="20" alt=""> Download</a>
-            </div>
-            <div class="d-flex flex-column justify-content-between border rounded-2 border-dark w-100 ms-2 p-2 download-box">
-              <p>CV</p>
-              <a href="docs/FabioMonzani_UXUI_CV2020.pdf" target="_blank"><img src="img/arrow-to-bottom.svg" height="20" alt=""> Download</a>
+    <section id="about" class="py-5 mt-5">
+      <div class="container">
+        <h2 class="mb-4">About</h2>
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <img src="img/profile-pic.png" class="img-fluid mb-5" alt="" loading="lazy" />
+          </div>
+          <div class="col-12 col-md-8">
+            <h2 class="text-medium">Hello.</h2>
+            <p>
+              I have been designing and developing user experiences and interfaces for over 10 years. I live and work in London, where I
+              create visuals compelling and user-friendly interfaces, using the latest tools and technologies. With a background in multiple
+              industries and countries, I am passionate about designing functional products with an eye for details striving to find simple
+              solution for complex problems. Focused on creating the right solution across all platform and devices aiming to create the
+              best User Experience in response of specific needs.
+            </p>
+            <div class="row gx-4 mt-4">
+              <div class="col-12 col-md-6">
+                <a
+                  href="docs/FabioMonzani_Design_Portfolio_2019-22.pdf"
+                  target="_blank"
+                  class="d-flex justify-content-between align-items-center border-top border-bottom py-1"
+                >
+                  <p>UX/UI Portfolio</p>
+                  <img src="img/arrow-down.svg" alt="" height="18" />
+                </a>
+              </div>
+              <div class="col-12 col-md-6">
+                <a
+                  href="docs/FabioMonzani_UXUI_CV2020.pdf"
+                  target="_blank"
+                  class="d-flex justify-content-between align-items-center border-top border-bottom py-1"
+                >
+                  <p>CV</p>
+                  <img src="img/arrow-down.svg" alt="" height="18" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  </div>
 
-  <footer class="mt-5">
-    <div class="container d-flex flex-column flex-sm-row justify-content-between border-top py-4">
-      <div class="">
-        <p>Fabio Monzani</p>
+    <footer class="py-5">
+      <div class="d-flex justify-content-center justify-content-md-end container mb-5">
+        <ul class="list-inline">
+          <li class="list-inline-item me-5">
+            <a href="https://www.linkedin.com/in/fabiomonzani/" target="_blank">LinkedIn</a>
+            <img class="ms-2" src="img/arrow-up-right-accent.svg" alt="" />
+          </li>
+          <li class="list-inline-item me-5">
+            <a href="https://github.com/monzanifabio" target="_blank">Github</a>
+            <img class="ms-2" src="img/arrow-up-right-accent.svg" alt="" />
+          </li>
+          <li class="list-inline-item me-5">
+            <a href="https://medium.com/@fabiomonzani" target="_blank">Medium</a>
+            <img class="ms-2" src="img/arrow-up-right-accent.svg" alt="" />
+          </li>
+          <li class="list-inline-item">
+            <a href="mailto:monzani.fabio@icloud.com" target="_blank">Email</a>
+            <img class="ms-2" src="img/arrow-up-right-accent.svg" alt="" />
+          </li>
+        </ul>
       </div>
-      <div class="">
-        <a class="mx-1 mx-sm-5" href="https://www.linkedin.com/in/fabiomonzani/" target="_blank"><img src="img/linkedin.svg" height="20" alt=""> LinkedIn</a>
-        <a class="mx-1 mx-sm-5" href="https://github.com/monzanifabio" target="_blank"><img src="img/github.svg" height="20" alt=""> Github</a>
-        <a class="mx-1 mx-sm-5" href="mailto:monzani.fabio@icloud.com" target="_blank"><img src="img/mail.svg" height="20" alt=""> Email</a>
-      </div>
+    </footer>
+
+    <div id="mobileNav" class="container fixed-bottom d-flex justify-content-center mobile-only">
+      <ul class="w-100 d-flex justify-content-between navigation nav nav-pills">
+        <li class="nav-item py-2 px-4">
+          <a class="text-neutral" href="#works">Works</a>
+        </li>
+        <li class="nav-item py-2 px-4">
+          <a class="text-neutral" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item py-2 px-4">
+          <a class="text-neutral" href="#about">About</a>
+        </li>
+      </ul>
     </div>
-  </footer>
 
-  <div class="container fixed-bottom d-flex justify-content-center mobile-only">
-    <ul class="w-100 d-flex justify-content-between navigation nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" href="#works">Works</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-    </ul>
-  </div>
+    <!-- Squiggles -->
+    <svg id="squiggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1467.398 820.031" preserveAspectRatio="none">
+      <path
+        fill="none"
+        stroke="#f5433b"
+        stroke-width="10"
+        stroke-linecap="round"
+        d="M.329 184.925s106.461-93.26 129.5-80.994-71.809 169.625-34.8 203.1S594.617-51.658 675.558 44.938-32.17 622.769 95.029 711.948C327.802 852.914 733.056 24.936 968.888 1.216s-504.379 522.6-333.08 673.891c102.939 84.708 556.727-628.642 780.555-478.193 137.938 90.8-438.664 538.26-359.4 609.778 95.49 82.292 410.068-258.769 410.068-258.769"
+      />
+    </svg>
 
-  <div id="modals"></div>
+    <!-- Modal -->
+    <div id="modals"></div>
 
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <script src="vendors/bootstrap-5.1.3/js/bootstrap.bundle.min.js"></script>
-  <script src="js/shrink.js" type="text/javascript"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $.ajaxSetup({
-        cache: false
-      });
-      $.get('projects/samlabs.html', '', function(data) {
-        $('#modals').append(data);
-      });
-      $.get('projects/podpoint.html', '', function(data) {
-        $('#modals').append(data);
-      });
-    })
-
-    $('.nav-link').on('click', function() {
-      $('.navbar-collapse').collapse('hide');
-    });
-
-    //Animate when scroll in view
-    const observer = new IntersectionObserver(entries => {
-      // Loop over the entries
-      entries.forEach(entry => {
-        // If the element is visible
-        if (entry.isIntersecting) {
-          // Add the animation class
-          entry.target.classList.add('stroke');
-        }
-      });
-    });
-
-    observer.observe(document.querySelector('.squiggle'));
-    observer.observe(document.querySelector('.circle'));
-    observer.observe(document.querySelector('.underline'));
-
-    window.onpopstate = function() {
-       $('.modal').modal('hide');
-    }; history.pushState({}, '');
-  </script>
-
-</body>
-
+    <script src="js/index.js"></script>
+  </body>
 </html>
