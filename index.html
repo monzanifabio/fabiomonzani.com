@@ -33,7 +33,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css" />
     <!-- Custom styling -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
@@ -595,87 +595,6 @@
     <!-- Modal -->
     <div id="modals"></div>
 
-    <!-- JavaScript Bundle with Popper -->
-    <!-- <script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script> -->
-
-    <script>
-      // Mobile navigation
-      window.addEventListener("scroll", function () {
-        let mobileNav = document.getElementById("mobileNav");
-
-        if (window.scrollY > 800) {
-          mobileNav.classList.add("fadeIn");
-        } else {
-          mobileNav.classList.remove("fadeIn");
-        }
-      });
-
-      let squiggle = document.getElementById("squiggle");
-
-      // Menu trigger
-      let isToggled = false;
-      const menuTrigger = document.querySelector('[data-bs-toggle="collapse"]');
-      menuTrigger.addEventListener("click", (e) => {
-        e.preventDefault();
-        isToggled = !isToggled;
-        let target = menuTrigger.getAttribute("data-bs-target");
-        console.log(target);
-        let targetMenu = document.getElementById(target);
-        console.log(targetMenu);
-        if (isToggled) {
-          document.getElementById(target).classList.add("show");
-        } else {
-          document.getElementById(target).classList.remove("show");
-        }
-      });
-
-      // Modals trigger
-      const modalTriggers = document.querySelectorAll('[data-bs-toggle="modal"]');
-      modalTriggers.forEach((modalTrigger) => {
-        modalTrigger.addEventListener("click", (e) => {
-          e.preventDefault();
-          squiggle.classList.add("squiggleIn");
-          let target = modalTrigger.getAttribute("data-target");
-          console.log(target);
-          let targetModal = document.getElementById(target);
-          console.log(targetModal);
-          // Delay the modal to appear until the squiggle animation has ended
-          setTimeout(() => {
-            targetModal.classList.add("show");
-            targetModal.style.display = "block";
-          }, 700);
-          squiggle.addEventListener("animationend", () => {
-            squiggle.classList.remove("squiggleIn");
-          });
-
-          const closeTriggers = document.querySelectorAll('[data-bs-dismiss="modal"]');
-          closeTriggers.forEach((closeTrigger) => {
-            closeTrigger.addEventListener("click", (e) => {
-              e.preventDefault();
-              targetModal.classList.remove("show");
-              targetModal.style.display = "none";
-            });
-          });
-        });
-      });
-
-      // Import all modals from /projects
-      const urls = ["./projects/podpoint.html", "./projects/samlabs.html", "./projects/orderly.html", "./projects/molteni-kitchen.html"];
-
-      window.addEventListener("load", (event) => {
-        const modals = document.getElementById("modals");
-
-        // Create an array of promises that resolve to the fetch responses
-        const fetchPromises = urls.map((url) => fetch(url).then((response) => response.text()));
-
-        // Wait for all of the promises to resolve
-        Promise.all(fetchPromises).then((responses) => {
-          // Process the responses
-          responses.forEach((response) => {
-            modals.innerHTML += response;
-          });
-        });
-      });
-    </script>
+    <script src="js/index.js"></script>
   </body>
 </html>
