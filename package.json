@@ -5,8 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "purgecss -c purgecss.config.js -o css && csso --output ./css/style.min.css ./css/style.css",
-    "tiny": "tinypng img -k Pmjbyj4JlKZzcHv0x6rpgJRmtwjRKYSb"
+    "build": "purgecss -c purgecss.config.js -o css && csso --output ./css/style.min.css ./css/style.css"
   },
   "repository": {
     "type": "git",
@@ -21,7 +20,6 @@
   "homepage": "https://github.com/monzanifabio/fabiomonzani.com#readme",
   "dependencies": {
     "csso-cli": "^4.0.1",
-    "purgecss": "^5.0.0",
-    "tinypng-cli": "^0.0.7"
+    "purgecss": "^5.0.0"
   }
 }
