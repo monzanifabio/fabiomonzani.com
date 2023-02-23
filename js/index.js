@@ -36,6 +36,7 @@ modalTriggers.forEach((modalTrigger) => {
     let targetModal = document.getElementById(target);
     // Delay the modal to appear until the squiggle animation has ended
     setTimeout(() => {
+      document.body.style.overflow = "hidden";
       targetModal.classList.add("show");
       targetModal.style.display = "block";
     }, 700);
@@ -47,6 +48,7 @@ modalTriggers.forEach((modalTrigger) => {
     closeTriggers.forEach((closeTrigger) => {
       closeTrigger.addEventListener("click", (e) => {
         e.preventDefault();
+        document.body.style.overflow = "";
         targetModal.classList.remove("show");
         targetModal.style.display = "none";
       });
