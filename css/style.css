@@ -48,6 +48,34 @@ a:hover {
   color: #000000;
 }
 
+dialog {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+dialog:modal {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+dialog[open] {
+  animation: show 0.8s ease-in forwards;
+  -webkit-animation: show 0.8s ease-in;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
 .text-regular {
   font-weight: 400;
 }
@@ -105,7 +133,7 @@ a:hover {
 }
 .project-cover .header-title {
   transform: translateY(250px);
-  animation: fadeIn 0.8s ease-in-out forwards 1.5s;
+  animation: fadeIn 0.8s ease-in-out forwards 0.8s;
 }
 @keyframes fadeIn {
   0% {
@@ -124,6 +152,7 @@ a:hover {
   background-position: center;
   filter: grayscale(100%);
   transition: filter 0.5s ease-in;
+  cursor: pointer;
 }
 .work-card:hover {
   filter: grayscale(0%);
@@ -237,7 +266,7 @@ SQUIGGLE
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
     stroke-width: 500;
     stroke-dashoffset: 0;
   }

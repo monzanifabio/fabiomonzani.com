@@ -26,35 +26,52 @@ menuTrigger.addEventListener("click", (e) => {
   }
 });
 
-// Modals trigger
-const modalTriggers = document.querySelectorAll('[data-bs-toggle="modal"]');
-modalTriggers.forEach((modalTrigger) => {
-  modalTrigger.addEventListener("click", (e) => {
-    e.preventDefault();
-    squiggle.classList.add("squiggleIn");
-    let target = modalTrigger.getAttribute("data-target");
-    let targetModal = document.getElementById(target);
-    // Delay the modal to appear until the squiggle animation has ended
-    setTimeout(() => {
-      document.body.style.overflow = "hidden";
-      targetModal.classList.add("show");
-      targetModal.style.display = "block";
-    }, 700);
-    squiggle.addEventListener("animationend", () => {
-      squiggle.classList.remove("squiggleIn");
-    });
-
-    const closeTriggers = document.querySelectorAll('[data-bs-dismiss="modal"]');
-    closeTriggers.forEach((closeTrigger) => {
-      closeTrigger.addEventListener("click", (e) => {
-        e.preventDefault();
-        document.body.style.overflow = "";
-        targetModal.classList.remove("show");
-        targetModal.style.display = "none";
-      });
-    });
+function openModal(target) {
+  modal = document.getElementById(target);
+  squiggle.classList.add("squiggleIn");
+  // Delay the modal to appear until the squiggle animation has ended
+  setTimeout(() => {
+    modal.showModal();
+  }, 800);
+  squiggle.addEventListener("animationend", () => {
+    squiggle.classList.remove("squiggleIn");
   });
-});
+}
+
+function closeModal(target) {
+  modal = document.getElementById(target);
+  modal.close();
+}
+
+// Modals trigger
+// const modalTriggers = document.querySelectorAll('[data-bs-toggle="modal"]');
+// modalTriggers.forEach((modalTrigger) => {
+//   modalTrigger.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     squiggle.classList.add("squiggleIn");
+//     let target = modalTrigger.getAttribute("data-target");
+//     let targetModal = document.getElementById(target);
+//     // Delay the modal to appear until the squiggle animation has ended
+//     setTimeout(() => {
+//       document.body.style.overflow = "hidden";
+//       targetModal.classList.add("show");
+//       targetModal.style.display = "block";
+//     }, 700);
+//     squiggle.addEventListener("animationend", () => {
+//       squiggle.classList.remove("squiggleIn");
+//     });
+
+//     const closeTriggers = document.querySelectorAll('[data-bs-dismiss="modal"]');
+//     closeTriggers.forEach((closeTrigger) => {
+//       closeTrigger.addEventListener("click", (e) => {
+//         e.preventDefault();
+//         document.body.style.overflow = "";
+//         targetModal.classList.remove("show");
+//         targetModal.style.display = "none";
+//       });
+//     });
+//   });
+// });
 
 // Import all modals from /projects
 const urls = ["./projects/podpoint.html", "./projects/samlabs.html", "./projects/orderly.html", "./projects/molteni-kitchen.html"];
