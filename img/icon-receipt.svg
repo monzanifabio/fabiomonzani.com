@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="CLOSE" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m3.26,16.63V1.06l2.36,2.17,2.65-2.24,2.53,2.12,2.36-1.94,2.62,2.21,2.56-2.15,2.44,2.03,2.47-2.28v18.49c0,1.96-1.59,3.54-3.54,3.54h0c-1.96,0-3.54-1.59-3.54-3.54v-2.56H.75v2.56c0,1.96,1.59,3.54,3.54,3.54h14.9"/>
+  <line class="cls-1" x1="7.82" y1="8.3" x2="17.07" y2="8.3"/>
+  <line class="cls-1" x1="7.82" y1="12.24" x2="12.92" y2="12.24"/>
+</svg>

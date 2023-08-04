@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="CALENDAR" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-linejoin: round;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="master">
+    <circle class="cls-1" cx="12" cy="12" r="11.25"/>
+    <polyline class="cls-2" points="11.79 6.72 11.79 13.17 14.97 16.35"/>
+  </g>
+</svg>
