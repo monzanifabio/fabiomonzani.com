@@ -107,7 +107,7 @@ hr {
   opacity: 0.25;
 }
 
- h3, .h3, h2, .h2, h1, .h1 {
+ h5, .h5, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -141,9 +141,19 @@ h3, .h3 {
   }
 }
 
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
 }
 
 
@@ -160,6 +170,10 @@ ul {
 
 ul ul {
   margin-bottom: 0;
+}
+
+blockquote {
+  margin: 0 0 1rem;
 }
 
 small, .small {
@@ -195,6 +209,10 @@ kbd {
 kbd kbd {
   padding: 0;
   font-size: 1em;
+}
+
+figure {
+  margin: 0 0 1rem;
 }
 
 img,
@@ -306,9 +324,31 @@ iframe {
   margin-right: 0.5rem;
 }
 
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+.blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.blockquote-footer {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875em;
+  color: #6c757d;
+}
+.blockquote-footer::before {
+  content: "— ";
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+.figure {
+  display: inline-block;
 }
 
 .container,
@@ -388,9 +428,13 @@ iframe {
   --bs-gutter-x: 1rem;
 }
 
-
+.g-4,
 .gx-4 {
   --bs-gutter-x: 1.5rem;
+}
+
+.g-4 {
+  --bs-gutter-y: 1.5rem;
 }
 @media (min-width: 768px) {
   .col-md-2 {
@@ -483,12 +527,12 @@ iframe {
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
- :not(.btn-check) + .btn:active, .btn:first-child:active {
+ :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
- :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible {
+ :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
 .btn:disabled {
@@ -549,6 +593,10 @@ iframe {
   color: var(--bs-nav-link-disabled-color);
   background-color: transparent;
   border-color: transparent;
+}
+.nav-pills .nav-link.active {
+  color: var(--bs-nav-pills-link-active-color);
+  background-color: var(--bs-nav-pills-link-active-bg);
 }
 
 .navbar {
@@ -872,6 +920,10 @@ iframe {
   z-index: 1030;
 }
 
+.align-bottom {
+  vertical-align: bottom !important;
+}
+
 .d-flex {
   display: flex !important;
 }
@@ -928,6 +980,14 @@ iframe {
 .my-5 {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
 }
 
 .mt-4 {
