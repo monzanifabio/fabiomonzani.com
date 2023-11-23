@@ -62,13 +62,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="d-flex row w-100 justify-content-end m-0">
-            <div class="col-12 col-md-2 p-2">
+            <div class="col-12 col-md-2 px-2">
               <a class="nav-link" href="#works">Works</a>
             </div>
-            <div class="col-12 col-md-2 p-2">
+            <div class="col-12 col-md-2 px-2 mt-n1">
               <a class="nav-link" href="#projects">Projects</a>
             </div>
-            <div class="col-12 col-md-2 p-2">
+            <div class="col-12 col-md-2 px-2 mt-n1">
               <a class="nav-link" href="#about">About</a>
             </div>
           </div>
@@ -95,11 +95,11 @@
       <h2 class="mb-4">Works</h2>
 
       <!-- Pod Point -->
-      <div onclick="openModal('podpointModal')">
+      <a class="delayedLink" href="projects/podpoint.html">
         <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/podpoint-cover.png')">
           <img src="img/pod-point-logo-white.svg" width="160" alt="" />
         </div>
-      </div>
+      </a>
       <div class="row mb-5">
         <div class="col-12 col-md-3">
           <div class="mb-4">
@@ -144,11 +144,11 @@
       </div>
 
       <!-- SAM Labs -->
-      <div onclick="openModal('samlabsModal')">
+      <a class="delayedLink" href="projects/samlabs.html">
         <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/samlabs-cover.png')">
           <img src="img/samlabs-logo-white.svg" width="160" alt="" />
         </div>
-      </div>
+      </a>
       <div class="row mb-5">
         <div class="col-12 col-md-3">
           <div class="mb-4">
@@ -196,11 +196,11 @@
       </div>
 
       <!-- ORDERLY -->
-      <div onclick="openModal('orderlyModal')">
+      <a class="delayedLink" href="projects/orderly.html">
         <div class="d-flex align-items-end work-card mb-3 p-3" style="background-image: url('/img/orderly-cover.png')">
           <img src="img/orderly-logo-white.svg" width="160" alt="" />
         </div>
-      </div>
+      </a>
       <div class="row mb-5">
         <div class="col-12 col-md-3">
           <div class="mb-4">
@@ -304,16 +304,16 @@
           <div class="project-card d-flex flex-column justify-content-between mb-3 p-3" style="background-image: url('/img/mockreate-cover.png')">
             <ul class="list-unstyled">
               <li class="text-bold">Project name</li>
-              <li>Mockreate</li>
+              <li>Mockreate AI</li>
             </ul>
             <img src="img/mockreate-logo.svg" width="60" alt="" />
           </div>
           <ul class="list-unstyled d-flex justify-content-between">
             <li class="text-bold">Type</li>
-            <li>Personal</li>
+            <li>Side project</li>
           </ul>
           <hr />
-          <p>Mockreate is a Figma plugin to generate random data quickly to fill tables and designs in general. With Mockreate you can choose from default datasets, random math and import your custom JSON data.</p>
+          <p>Mockreate AI is a Figma plugin to generate random data quickly to fill tables and designs in general. With Mockreate you can choose from default datasets, random math, import your custom JSON data and much more.</p>
           <ul class="list-inline my-4">
             <li class="list-inline-item me-4">
               <a href="https://monzanifabio.github.io/figma-mockreate/" target="_blank"
@@ -324,12 +324,6 @@
             <li class="list-inline-item me-4">
               <a href="https://www.figma.com/community/plugin/1096384653667384513" target="_blank"
                 >Figma
-                <img src="img/arrow-up-right.svg" alt="" />
-              </a>
-            </li>
-            <li class="list-inline-item me-4">
-              <a href="https://www.producthunt.com/posts/mockreate?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-mockreate" target="_blank"
-                >ProductHunt
                 <img src="img/arrow-up-right.svg" alt="" />
               </a>
             </li>
@@ -388,10 +382,9 @@
 
         <!-- Cryptofonts -->
         <div class="col-md-4 col-12">
-          <div class="project-card d-flex flex-column justify-content-between bg-dark mb-3 p-3">
-            <video src="/video/cryptofonts.mp4" autoplay loop muted playsinline></video>
+          <div class="project-card d-flex flex-column justify-content-between mb-3 p-3" style="background-image: url('/img/cryptofonts-cover.png')">
             <ul class="list-unstyled">
-              <li class="text-bold">Project name</li>
+              <li class="text-bold">Side project</li>
               <li>Cryptofonts</li>
             </ul>
             <img src="img/cryptofonts-logo.svg" width="60" alt="" />
@@ -401,7 +394,7 @@
             <li>Open Source</li>
           </ul>
           <hr />
-          <p>Cryptofonts is the leading website for open-source, crisp cryptocurrency webfont, icons and SVG used by leading industry providers in the Web3 space.</p>
+          <p>Cryptofonts is the leading project for open-source, crisp cryptocurrency webfont, icons and SVG offering a free API used by leading industry providers in the Web3 space.</p>
           <ul class="list-inline my-4">
             <li class="list-inline-item me-4">
               <a href="https://cryptofonts.com/" target="_blank">Website <img src="img/arrow-up-right.svg" alt="" /></a>
@@ -431,7 +424,7 @@
           </p>
           <ul class="list-inline my-4">
             <li class="list-inline-item me-4">
-              <div class="cursor-pointer" onclick="openModal('molteniModal')">Showcase <img src="img/arrow-up-right.svg" alt="" /></div>
+              <a class="cursor-pointer delayedLink" href="projects/molteni-kitchen.html">Showcase <img src="img/arrow-up-right.svg" alt="" /></a>
             </li>
           </ul>
         </div>

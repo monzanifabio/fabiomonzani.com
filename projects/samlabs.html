@@ -1,102 +1,146 @@
-<dialog id="samlabsModal">
-  <div class="modal-dialog modal-fullscreen">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button class="btn" onclick="closeModal('samlabsModal')">
-          <img src="/img/arrow-down-left.svg" alt="" height="20" loading="lazy" />
-        </button>
-      </div>
-      <div class="modal-body p-0">
-        <div class="project-cover d-flex flex-column justify-content-end" style="background-image: url('/img/samlabs-cover.png')">
-          <h1 class="header-title text-neutral" style="font-size: 21vw">SAM Labs</h1>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <div class="container">
-          <div class="row mt-4">
-            <p>
-              SAM Labs is an EdTech company that provides software, hardware and content to teachers, creating the necessary confidence for teaching STEAM and coding to kids.<br /><br />
-              My main role as UX/UI designer was to improve and redesign SAM Space, the flagship app for iOS, Android, Windows and Chromebook.<br />
-              While doing that, I had to keep in mind existing users, devices and content designed to be working with the app.<br />
-              At the same time, bluetooth hardware blocks needed to be easy to recognise and pair to the device, creating a seamless and “magic” experience.<br /><br />
-              Talking to teachers and users in general to collect data and research alongside our UX researcher was one of the main task during the design process.<br /><br />
-              I also had the opportunity to touch into different departments, like content and manufacture, to bring the same user experience across the company products.
-            </p>
+    <title>Fabio Monzani | SAMLabs</title>
 
-            <h3 class="mb-4 mt-5">User research</h3>
-            <div class="col-md-6">
+    <meta name="description" content="Product designer" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://fabiomonzani.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Fabio Monzani" />
+    <meta property="og:description" content="Product designer" />
+    <meta property="og:image" content="https://fabiomonzani.com/img/preview.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="fabiomonzani.com" />
+    <meta property="twitter:url" content="https://fabiomonzani.com" />
+    <meta name="twitter:title" content="Fabio Monzani" />
+    <meta name="twitter:description" content="Product designer" />
+    <meta name="twitter:image" content="https://fabiomonzani.com/img/preview.png" />
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.min.css" />
+    <!-- Custom styling -->
+    <link rel="stylesheet" href="/css/style.min.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+  </head>
+  <body>
+    <div class="placeholder-cover"></div>
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="project-cover d-flex flex-column justify-content-end" style="background-image: url('/img/samlabs-cover.png')">
+            <h1 class="header-title text-neutral" style="font-size: 21vw">SAM Labs</h1>
+          </div>
+
+          <div class="container">
+            <div class="row mt-4">
               <p>
-                The redesign and improvement of SAM Space started with collecting data and user feedback from the current application in order to understand the good and the bad.<br /><br />
-                The main user personas where teachers and kids from elementary school and older grades. Researches were carried out by observing how the product and app were being used in classroom and also interacting with kids to get their unbiased opinions.<br />
-                Teacher researches on the other side were used for a more adult perspective on the direction the product should focus and possible future features that could help them teach in a better way.<br /><br />
-                The main takeaways from my researches, both in the UK and USA were:<br />
-
-                - A better pairing experience, especially with a lot of kids trying to connect at the same time.<br />
-                - Improved interface and navigation between actions and programming behaviours.<br />
-                - A missing guidance/tutorial when getting started. Account management and creation.<br />
-                - Minor improvements
+                SAM Labs is an EdTech company that provides software, hardware and content to teachers, creating the necessary confidence for teaching STEAM and coding to kids.<br /><br />
+                My main role as UX/UI designer was to improve and redesign SAM Space, the flagship app for iOS, Android, Windows and Chromebook.<br />
+                While doing that, I had to keep in mind existing users, devices and content designed to be working with the app.<br />
+                At the same time, bluetooth hardware blocks needed to be easy to recognise and pair to the device, creating a seamless and “magic” experience.<br /><br />
+                Talking to teachers and users in general to collect data and research alongside our UX researcher was one of the main task during the design process.<br /><br />
+                I also had the opportunity to touch into different departments, like content and manufacture, to bring the same user experience across the company products.
               </p>
-            </div>
-            <div class="col-md-6">
-              <img class="img-fluid" src="img/samlabs1.png" alt="" loading="lazy" />
-            </div>
 
-            <h3 class="mb-4 mt-5">Wireframing</h3>
-            <p>
-              During the wireframing process I used different tools and methodologies, from the classic pen and paper, white boarding and Adobe XD for fast mapping and prototyping.<br /><br />
-              I went through multiple iterations, every time bringing forward the most successful parts and elements, testing basic interactions by creating bare minimum interfaces and always keeping in mind users journey and requirements.<br /><br />
-              The most challenging part was related to the hardware and bluetooth technology in use by the company which has proven to respond in different way depending on the OS and model.<br />
-              In order to overcome this problem, different UX and UI solutions were put in space specifically to solve the issue, plus positive reinforcements which turned out to be great for kids.
-            </p>
-            <div class="col-md-12">
-              <img class="img-fluid" src="img/samlabs2.png" alt="samlabs wireframe image" loading="lazy" />
-            </div>
+              <h3 class="mb-4 mt-5">User research</h3>
+              <div class="col-md-6">
+                <p>
+                  The redesign and improvement of SAM Space started with collecting data and user feedback from the current application in order to understand the good and the bad.<br /><br />
+                  The main user personas where teachers and kids from elementary school and older grades. Researches were carried out by observing how the product and app were being used in classroom and also interacting with kids to get their unbiased opinions.<br />
+                  Teacher researches on the other side were used for a more adult perspective on the direction the product should focus and possible future features that could help them teach in a better way.<br /><br />
+                  The main takeaways from my researches, both in the UK and USA were:<br />
 
-            <h3 class="mb-4 mt-5">Website Design 2020</h3>
+                  - A better pairing experience, especially with a lot of kids trying to connect at the same time.<br />
+                  - Improved interface and navigation between actions and programming behaviours.<br />
+                  - A missing guidance/tutorial when getting started. Account management and creation.<br />
+                  - Minor improvements
+                </p>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="/img/samlabs1.png" alt="" loading="lazy" />
+              </div>
 
-            <div class="col-md-12">
+              <h3 class="mb-4 mt-5">Wireframing</h3>
               <p>
-                After working on the re-design of SAM Space (the company flagship app) was time to refresh the website as a part of relaunching the company in 2020.<br /><br />
-                I followed a very similar research-design approach which was then converted into wireframe and multiple design iterations keeping as a main goal that the user should reach anywhere on the website in 2 click maximum.<br /><br />
-                For this project I’ve been closer to every single company department, including management, HR, marketing, sales and product, translating my previous user research into a better website to compliment the experience of onboarding new users, lessons management and shopping among the most important.
+                During the wireframing process I used different tools and methodologies, from the classic pen and paper, white boarding and Adobe XD for fast mapping and prototyping.<br /><br />
+                I went through multiple iterations, every time bringing forward the most successful parts and elements, testing basic interactions by creating bare minimum interfaces and always keeping in mind users journey and requirements.<br /><br />
+                The most challenging part was related to the hardware and bluetooth technology in use by the company which has proven to respond in different way depending on the OS and model.<br />
+                In order to overcome this problem, different UX and UI solutions were put in space specifically to solve the issue, plus positive reinforcements which turned out to be great for kids.
               </p>
-            </div>
-            <div class="col-md-12">
-              <img class="img-fluid" src="img/samlabs4.png" alt="samlabs website user journey" loading="lazy" />
-            </div>
-            <div class="col-md-12">
-              <img class="img-fluid" src="img/samlabs3.png" alt="samlabs website design 2020" loading="lazy" />
-            </div>
+              <div class="col-md-12">
+                <img class="img-fluid" src="/img/samlabs2.png" alt="samlabs wireframe image" loading="lazy" />
+              </div>
 
-            <h3 class="mb-4 mt-5">Illustrations & Characters design</h3>
-            <div class="col-md-12">
-              <img class="img-fluid" src="img/samlabs5.png" alt="samlabs illustrations" loading="lazy" />
-            </div>
+              <h3 class="mb-4 mt-5">Website Design 2020</h3>
 
-            <p>
-              As part of the product, software, hardware and content were 3 of the main area I was involved as designer.<br /><br />
-              One of the latest product I’ve been working on at SAM Labs was the creation and illustration of a character for a series of 23 lessons dedicated to Kindergarten.<br /><br />
-              During the process I had to closely work with the content and editor team, to brainstorm stories and transform them into beautiful illustration.<br />
-              This included the character design, animations (Adobe Character Animator/ Adobe After Effects) and lessons illustrations (Adobe Illustrator)<br /><br />
-              The main inspiration for the character comes from the letter “A” in the SAM logo, which was transformed and re-iterated to create this character.
-            </p>
+              <div class="col-md-12">
+                <p>
+                  After working on the re-design of SAM Space (the company flagship app) was time to refresh the website as a part of relaunching the company in 2020.<br /><br />
+                  I followed a very similar research-design approach which was then converted into wireframe and multiple design iterations keeping as a main goal that the user should reach anywhere on the website in 2 click maximum.<br /><br />
+                  For this project I’ve been closer to every single company department, including management, HR, marketing, sales and product, translating my previous user research into a better website to compliment the experience of onboarding new users, lessons management and shopping among the most important.
+                </p>
+              </div>
+              <div class="col-md-12">
+                <img class="img-fluid" src="/img/samlabs4.png" alt="samlabs website user journey" loading="lazy" />
+              </div>
+              <div class="col-md-12">
+                <img class="img-fluid" src="/img/samlabs3.png" alt="samlabs website design 2020" loading="lazy" />
+              </div>
 
-            <h3 class="mb-4 mt-5">Videos and stop-motion animations</h3>
-            <p class="mb-4">As a part of our product offering, we created getting-started videos and product explanations. It was very important for the videos to be clear for all ages but also short and engaging.</p>
+              <h3 class="mb-4 mt-5">Illustrations & Characters design</h3>
+              <div class="col-md-12">
+                <img class="img-fluid" src="/img/samlabs5.png" alt="samlabs illustrations" loading="lazy" />
+              </div>
 
-            <div class="col-md-6">
-              <iframe src="https://www.youtube.com/embed/b8JysxUDMHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-6">
-              <iframe src="https://www.youtube.com/embed/DEiIqWXiffw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+              <p>
+                As part of the product, software, hardware and content were 3 of the main area I was involved as designer.<br /><br />
+                One of the latest product I’ve been working on at SAM Labs was the creation and illustration of a character for a series of 23 lessons dedicated to Kindergarten.<br /><br />
+                During the process I had to closely work with the content and editor team, to brainstorm stories and transform them into beautiful illustration.<br />
+                This included the character design, animations (Adobe Character Animator/ Adobe After Effects) and lessons illustrations (Adobe Illustrator)<br /><br />
+                The main inspiration for the character comes from the letter “A” in the SAM logo, which was transformed and re-iterated to create this character.
+              </p>
 
-            <div class="col-md-12 text-center my-5">
-              <img src="img/samlabs-logo-small.svg" height="80" alt="" loading="lazy" />
-              <p class="small">SAM Labs 2018-2020</p>
+              <h3 class="mb-4 mt-5">Videos and stop-motion animations</h3>
+              <p class="mb-4">As a part of our product offering, we created getting-started videos and product explanations. It was very important for the videos to be clear for all ages but also short and engaging.</p>
+
+              <div class="col-md-6">
+                <iframe src="https://www.youtube.com/embed/b8JysxUDMHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-6">
+                <iframe src="https://www.youtube.com/embed/DEiIqWXiffw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+
+              <div class="col-md-12 text-center my-5">
+                <img src="/img/samlabs-logo-small.svg" height="80" alt="" loading="lazy" />
+                <p class="small">SAM Labs 2018-2020</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</dialog>
+  </body>
+</html>

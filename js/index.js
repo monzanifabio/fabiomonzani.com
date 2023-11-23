@@ -43,50 +43,21 @@ function closeModal(target) {
   modal.close();
 }
 
-// Modals trigger
-// const modalTriggers = document.querySelectorAll('[data-bs-toggle="modal"]');
-// modalTriggers.forEach((modalTrigger) => {
-//   modalTrigger.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     squiggle.classList.add("squiggleIn");
-//     let target = modalTrigger.getAttribute("data-target");
-//     let targetModal = document.getElementById(target);
-//     // Delay the modal to appear until the squiggle animation has ended
-//     setTimeout(() => {
-//       document.body.style.overflow = "hidden";
-//       targetModal.classList.add("show");
-//       targetModal.style.display = "block";
-//     }, 700);
-//     squiggle.addEventListener("animationend", () => {
-//       squiggle.classList.remove("squiggleIn");
-//     });
+// Delayed reveal
+var links = document.getElementsByClassName("delayedLink");
 
-//     const closeTriggers = document.querySelectorAll('[data-bs-dismiss="modal"]');
-//     closeTriggers.forEach((closeTrigger) => {
-//       closeTrigger.addEventListener("click", (e) => {
-//         e.preventDefault();
-//         document.body.style.overflow = "";
-//         targetModal.classList.remove("show");
-//         targetModal.style.display = "none";
-//       });
-//     });
-//   });
-// });
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener("click", function (event) {
+    event.preventDefault();
 
-// Import all modals from /projects
-const urls = ["./projects/podpoint.html", "./projects/samlabs.html", "./projects/orderly.html", "./projects/molteni-kitchen.html"];
+    var href = this.getAttribute("href");
+    squiggle.classList.add("squiggleIn");
 
-window.addEventListener("load", (event) => {
-  const modals = document.getElementById("modals");
-
-  // Create an array of promises that resolve to the fetch responses
-  const fetchPromises = urls.map((url) => fetch(url).then((response) => response.text()));
-
-  // Wait for all of the promises to resolve
-  Promise.all(fetchPromises).then((responses) => {
-    // Process the responses
-    responses.forEach((response) => {
-      modals.innerHTML += response;
+    setTimeout(function () {
+      window.location.href = href;
+    }, 800); // 5000 milliseconds = 5 seconds
+    squiggle.addEventListener("animationend", () => {
+      squiggle.classList.remove("squiggleIn");
     });
   });
-});
+}
