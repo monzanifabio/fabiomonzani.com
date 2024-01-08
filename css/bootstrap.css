@@ -982,6 +982,10 @@ iframe {
   padding-top: 3rem !important;
 }
 
+.fw-bold {
+  font-weight: 700 !important;
+}
+
 .text-center {
   text-align: center !important;
 }
