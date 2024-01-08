@@ -846,8 +846,16 @@ iframe {
   width: 100% !important;
 }
 
+.flex-row {
+  flex-direction: row !important;
+}
+
 .flex-column {
   flex-direction: column !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
 }
 
 .justify-content-end {
@@ -990,6 +998,12 @@ iframe {
 @media (min-width: 576px) {
   .flex-sm-row {
     flex-direction: row !important;
+  }
+  .flex-sm-column {
+    flex-direction: column !important;
+  }
+  .flex-sm-nowrap {
+    flex-wrap: nowrap !important;
   }
 }
 @media (min-width: 768px) {
