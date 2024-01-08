@@ -90,6 +90,10 @@ dialog[open] {
   cursor: pointer !important;
 }
 
+.ff-ibm-plex {
+  font-family: "IBM Plex Mono", monospace;
+}
+
 .text-regular {
   font-weight: 400;
 }

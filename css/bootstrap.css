@@ -822,6 +822,10 @@ iframe {
   z-index: 1030;
 }
 
+.align-baseline {
+  vertical-align: baseline !important;
+}
+
 .align-bottom {
   vertical-align: bottom !important;
 }
@@ -982,12 +986,20 @@ iframe {
   padding-top: 3rem !important;
 }
 
+.fw-normal {
+  font-weight: 400 !important;
+}
+
 .fw-bold {
   font-weight: 700 !important;
 }
 
 .text-center {
   text-align: center !important;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
 }
 
 /* rtl:begin:remove */
