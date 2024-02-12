@@ -2,10 +2,11 @@
   --primary-color: #f5433b;
   --primary-bg: #f2eeec;
   --pure-black: #000000;
+  --raisin-black: #252122;
 }
 
 * {
-  color: #000000;
+  color: var(--raisin-black);
 }
 
 html {
@@ -121,6 +122,9 @@ dialog[open] {
   background-color: var(--primary-color);
   border: none;
 }
+.navbar-brand {
+  color: var(--raisin-black);
+}
 .navbar-toggler {
   border-color: transparent;
 }
@@ -129,9 +133,9 @@ dialog[open] {
 }
 
 .nav-link {
-  color: #000000;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  color: var(--raisin-black);
+  border-top: 1px solid var(--raisin-black);
+  border-bottom: 1px solid var(--raisin-black);
   font-weight: 700;
   padding: 0.5rem 2rem 0.5rem 0rem !important;
 }
@@ -207,7 +211,7 @@ hr {
 }
 #about,
 footer {
-  background-color: var(--pure-black);
+  background-color: var(--raisin-black);
 }
 #about * {
   color: var(--primary-bg);

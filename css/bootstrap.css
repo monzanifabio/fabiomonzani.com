@@ -194,9 +194,19 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 }
 
 
+code,
 kbd {
   font-family: var(--bs-font-monospace);
   font-size: 1em;
+}
+
+code {
+  font-size: 0.875em;
+  color: var(--bs-code-color);
+  word-wrap: break-word;
+}
+a > code {
+  color: inherit;
 }
 
 kbd {
@@ -242,6 +252,10 @@ button {
 
 [role=button] {
   cursor: pointer;
+}
+
+[list]:not([type=date]):not([type=datetime-local]):not([type=month]):not([type=week]):not([type=time])::-webkit-calendar-picker-indicator {
+  display: none !important;
 }
 
 button,
@@ -545,7 +559,8 @@ iframe {
   background-color: transparent;
   border-color: transparent;
 }
-.nav-pills .nav-link.active {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
   color: var(--bs-nav-pills-link-active-color);
   background-color: var(--bs-nav-pills-link-active-bg);
 }
@@ -720,6 +735,9 @@ iframe {
   width: auto;
   margin: var(--bs-modal-margin);
   pointer-events: none;
+}
+.modal.show .modal-dialog {
+  transform: none;
 }
 
 .modal-content {
@@ -1012,6 +1030,14 @@ iframe {
 .bg-dark {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.rounded {
+  border-radius: var(--bs-border-radius) !important;
+}
+
+.rounded-4 {
+  border-radius: var(--bs-border-radius-xl) !important;
 }
 
 @media (min-width: 576px) {
