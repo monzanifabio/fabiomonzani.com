@@ -45,274 +45,303 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#index-nav" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
     <div class="placeholder-cover"></div>
-    <div class="modal-dialog modal-fullscreen">
-      <div class="modal-content">
-        <div class="modal-body p-0">
-          <div class="project-cover d-flex flex-column justify-content-end" style="background-image: url('/img/podpoint-cover.png')">
-            <h1 class="header-title text-neutral" style="font-size: 22vw">Pod Point</h1>
+    <div class="modal-content">
+      <div class="project-cover d-flex flex-column justify-content-end" style="background-image: url('/img/podpoint-cover.png')">
+        <h1 class="header-title text-neutral" style="font-size: 22vw">Pod Point</h1>
+      </div>
+
+      <!-- <nav class="navbar-secondary navbar-expand-lg sticky-top border-bottom border-dark">
+        <div class="container"> -->
+      <ul class="nav navbar-secondary nav-fill nav-underline sticky-top" id="index-nav">
+        <li class="nav-item">
+          <a class="nav-link border-0" href="#design-system">Design System</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active border-0" href="#pod-point-app">Pod Point App</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-0" href="#installer-app">Installer App</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-0" href="#site-man-service">Site Management Service</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-0" href="#storefront">Storefront</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-0" href="#other">Other projects</a>
+        </li>
+      </ul>
+      <!-- </div>
+      </nav> -->
+
+      <div class="container scrollspy-example bg-body-tertiary p-3 rounded-2">
+        <p class="mt-3">
+          Pod Point is a leading UK provider of charging infrastructure for electric vehicles. It provides charging units for home, business and public use.<br />
+
+          My main role as Lead UX/UI designer here at Pod Point is to maintain the existing products, like the Pod Point App and services while working on new features and creating the products that are going to shape the future of the company.<br />
+
+          As electric vehicles keep rising in popularity, so is demand for charging infrastructure and our products, which always offer a challenging experience when researching how to shape the future of a fairly new industry.<br />
+
+          Talking and listening to user needs and feedback has been key in the creation and development of new products, while balancing the current industry tech limitations and expanding styling and brand guidelines.<br />
+
+          Everyday working at Pod Point has been a full dive into an ever changing industry that still has a lot of complexities with a steep learning curve.<br /><br />
+          I have been working across multiple departments and products at Pod Point, all of which needed a different approach depending on the goals.
+        </p>
+
+        <h3 class="mb-4 mt-5">Research methodologies</h3>
+        <p>
+          At Pod Point, I had the opportunity to explore and innovate various research methodologies, though occasionally constrained by time limitations, which sometimes impeded conducting thorough investigations. Despite these challenges, I actively engaged in testing and refining novel methodologies. In certain instances, we had to rely on existing data or assumptions, which raised concerns about whether our approach would be optimal for our end users. When time constraints were pressing, we
+          conducted internal testing, leveraging the diverse pool of over 500 employees with varying backgrounds and user profiles. However, I occasionally felt dissatisfied with this approach as it might have led us to overlook crucial aspects. <br /><br />
+          To enhance our research processes, we integrated several tools into our methodology, such as Hotjar, Usability Hub, and Mixpanel. Hotjar enabled us to gather valuable insights into user behavior through heatmaps, session recordings, and feedback polls. This tool provided a deeper understanding of how users interacted with our products and identified pain points.<br /><br />
+          Usability Hub allowed us to conduct remote usability tests and gather feedback from a broader audience, which expanded our reach and enabled us to identify potential issues that might have gone unnoticed otherwise.<br /><br />
+          Mixpanel, on the other hand, helped us track user engagement and measure the impact of changes in our designs or features, providing valuable data to inform decision-making. By incorporating these tools into our research process, we aimed to enrich the quality of our findings and address time constraints more efficiently
+        </p>
+
+        <h3 id="design-system" class="pb-4 pt-5">Design System</h3>
+        <p class="mb-3">
+          When I first started at Pod Point in 2020, I noticed that the non-existent design system and outdated brand guidelines were affecting our ability to deliver a cohesive user experience. The lack of a unified design language led to inconsistencies across our suite of products, making it challenging for users to navigate and engage with our offerings effectively.<br /><br />
+          To address these issues, I undertook the task of creating a comprehensive design system from scratch. My goal was to establish a solid foundation that would serve as a guiding framework for all product development efforts. By implementing a design system, we aimed to bring clarity, consistency, and coherence to our product ecosystem, ultimately enhancing the overall user experience.<br /><br />
+          The design system initiative involved three key components: a foundation system, including colours, spacing, typography etc and one for web applications and another specifically tailored for mobile platforms. Recognizing the unique design considerations and user interactions associated with each platform, I ensured that the design systems were optimized to suit the respective environments while maintaining overarching brand coherence.
+        </p>
+
+        <div class="row">
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-ds-1.jpg" alt="pod point design system" loading="lazy" />
+            <a href="https://www.figma.com/file/WBq2V99oSrTNiJLvwVnST8/%E2%9D%96-Foundations-UI-Design-System?type=design&node-id=0%3A1&mode=design&t=30d38KYWnbyrvFIV-1" target="_blank"
+              >Figma
+              <img src="/img/arrow-up-right.svg" alt="" />
+            </a>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-ds-2.jpg" alt="pod point design system" loading="lazy" />
+            <a href="https://www.figma.com/file/XHWi3a9Gvh4HNhFPMhJGll/%E2%9D%96-Web-UI-Design-System?type=design&node-id=1%3A427&mode=design&t=5nLUiNj6IdBcBqEe-1" target="_blank"
+              >Figma
+              <img src="/img/arrow-up-right.svg" alt="" />
+            </a>
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-ds-3.jpg" alt="pod point design system" loading="lazy" />
+            <a href="https://www.figma.com/file/rMuiki055hLBhWQc40WupL/%E2%9D%96-Mobile-UI-Design-System?type=design&node-id=1%3A59&mode=design&t=909Las22GMKbLsQe-1" target="_blank"
+              >Figma
+              <img src="/img/arrow-up-right.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <h3 id="pod-point-app" class="pb-4 pt-5">Pod Point App</h3>
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <p>
+              The Pod Point App is the heart of the home charge ecosystem.<br />
+              From here you can explore and access the public charging network as well as managing your WiFi enabled homecharger and your charging data.<br /><br />
+              EV drivers have a particularly wide range of user persona that tend to condense in the range of 40+.<br />
+              It was imperative to create a simple user experience that would benefit from consolidated design patterns that are easily recognisable.<br /><br />
+              Researches for all Pod Point products were carried out both internally and externally, tapping in our ever-growing customer base.<br />
+              Design sprints were also used to kickstart new products and features but following a new redesigned structure to better fit the “working from home” environment.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/pp-1.png" alt="pp app 2022" loading="lazy" />
+          </div>
+        </div>
+        <h5 class="mb-2"><img class="align-bottom" src="/img/icon-clock.svg" alt="" width="24" /> Charge schedule</h5>
+        <p class="mb-3">
+          Charge schedule was one of the first feature I have been working on the EV driver app and one that has been requested by our user for a very long time. The feature allowed user to schedule a start and stop time to charge their EV when electricity was cheap at night, especially if you had a dual-rate tariff. This project and initial release had to overcome some technical difficulties due to the charger API and the general infrastructure limitations and was released in 2020. Due to
+          limitations we were constrained to one schedule per day, schedules could not overlap meaning that we had to develop a sigular approach for a very simple feature.
+        </p>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-hcs-1.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-hcs-2.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-hcs-3.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+        </div>
+        <p class="mb-3">The next release of charge schedule (2023) improved upon the previous iteration bringing more clarity around time settings and some other needed improvement suggested by our users. Among the improvements we decided to shift to a time based duration instead of selecting the start and stop time, also the days of the week are now clearer to understand where a charge is active or inactive.</p>
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-hcs-4.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-hcs-5.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-hcs-6.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+        </div>
+        <h5 class="mb-2"><img class="align-bottom" src="/img/icon-receipt.svg" alt="" width="24" /> Charges expenses for companies</h5>
+        <p class="mb-2">As part of the new Sites Management Service, business customers using the Pod Point public network needed a way to expense their charges to the company. Before implementing this feature, drivers had to downlaod a CSV file of their charges and send that to their company for refund. The expensing feature seamlessly integrate with the Site Management Service, so that fleet managers can see charges and expenses in realtime as well as refunding drivers.</p>
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-exp-1.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-exp-2.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-exp-3.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+        </div>
+        <h5 class="mb-2"><img class="align-bottom" src="/img/icon-solo3.svg" alt="" width="24" /> Onboarding journey</h5>
+        <p class="mb-2">As our user base grows and Pod Point units are installed on new houses and developments we needed to develop a seamless in-app experience for new owners to connect their unit to the app in order to control, schedule and charge. Before implementing this journey in the app, the customer would have to contact customer support via phone if their unit was not purchased directly through Pod Point.</p>
+        <div class="row mb-5">
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-onj-1.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+          <div class="col-md-8">
+            <img class="img-fluid" src="/img/pp-onj-2.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+        </div>
+        <h5 class="mb-2"><img class="align-bottom" src="/img/icon-carbon.svg" alt="" width="24" /> CO2 Insights</h5>
+        <p class="mb-2">CO2 insights bring awareness to everyday user about the real impact of using electricty at specific time of the day. By using the National Grid API we were able to display the amount of CO2 generated per kWh produced, so that user could make and informed and conscious choice on when was best to charge their EV or use electricity in general based on their region.</p>
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-co2-1.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-co2-2.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+          <div class="col-md-4">
+            <img class="img-fluid" src="/img/pp-co2-3.jpg" alt="pp app 2022" loading="lazy" />
+          </div>
+        </div>
+        <h3 id="installer-app" class="pb-4 pt-5">Installer App</h3>
+        <p class="mb-3">
+          The Installer App, started in 2023 was a project initiated to replace the current installation and configuration methods of the units, usually performed by electricians and installers.<br />
+          The goal was to create a more native and streamlined experience that could be accessed directly on the installers mobile devices instead of relying on a webpage living on the units and accessible only via captive portal.<br />
+          In collaboration with ScreenMedia, an external agency tasked with the development of the mobile app for Android and iOS devices, I was responsible for creating the app user journeys, investigating installers and electrician preferences and translating that into a mobile app, as well as designing the full UI and general experience.
+        </p>
+
+        <h3 id="site-man-service" class="pb-4 pt-5">Sites Management Service</h3>
+        <p class="mb-3">
+          Offering a fleet management system has always been one of the main priority for the commercial side of the business as well as replacing our old management system.<br />
+
+          Among our customers Mitie, DPD, Amazon and Sky to name a few, had the need to track usage and electricity expenses for their new EV fleet delivery vehicle.<br /><br />
+
+          We had to offer a solid solution that could help visualise multiple source of data as well as managing driver, vehicle and expenses.<br />
+
+          Research and user interviews started well in advance in order to have enough time to better understand the problem we were going to solve but also creating a solution that could scale together with our customers fleet.<br /><br />
+
+          I had the opportunity to learn more about the needs and experiment with new ideas given how new the EV industry is. Lots of data needed to be managed in the process while displaying them in a simple and intuitive way was a key part of the success of our fleet solution. Once released to our business customers the product was well received and these are some of the feedback we received:
+        </p>
+        <div class="row g-4 mb-3">
+          <div class="col-md-3">
+            <figure>
+              <blockquote class="blockquote">
+                <p>"Better and faster than the old system, and you guys are listening"</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Simon @ Glyndbourne</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure>
+              <blockquote class="blockquote">
+                <p>"The new portal is great and much easier to use, thank you for setting up access"</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Paul @ Landsec</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure>
+              <blockquote class="blockquote">
+                <p>"Not complicated to use, the layout is much better"</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Leia @ Bet365</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure>
+              <blockquote class="blockquote">
+                <p>"Great new site, very easy to use"</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Paul @ EDF Energy</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure>
+              <blockquote class="blockquote">
+                <p>"It does seem a lot cleaner and more intuitive"</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Peter @ Napier</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-3">
+            <figure>
+              <blockquote class="blockquote">
+                <p>"Looks modern and contains lots more info"</p>
+              </blockquote>
+              <figcaption class="blockquote-footer">Gary @ Hydro</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/pp-sms-1.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/pp-sms-2.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/pp-sms-3.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/pp-sms-4.jpg" alt="" loading="lazy" />
+          </div>
+        </div>
+
+        <h3 id="storefront" class="pb-4 pt-5">Storefront experience</h3>
+        <p>
+          The homecharge storefront experience was the remake of our current e-commerce platform, allowing customers to purchase their homecharge units. As the business requirements were growing in complexity, our current e-commerce experience needed a redesign to accomodate for more products, acessories and streamline the experience to make it simpler for our customers to complete their journey. In the process of migrating to a CMS rather than a custom built platform we collaborated with an
+          external agency to deliver the platform.
+        </p>
+        <div class="row g-4 mt-0">
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/pp-hcj-1.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/pp-hcj-2.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/pp-hcj-3.jpg" alt="" loading="lazy" />
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid" src="/img/pp-hcj-4.jpg" alt="" loading="lazy" />
+          </div>
+        </div>
+
+        <h3 id="other" class="pb-4 pt-5">Other projects</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <p>Knowledge base</p>
+            <img class="img-fluid" src="/img/pp-5.png" alt="" loading="lazy" />
+            <p class="small">A Salesforce based knowledge base to help users find answers to their questions.</p>
           </div>
 
-          <div class="container">
-            <p class="mt-3">
-              Pod Point is a leading UK provider of charging infrastructure for electric vehicles. It provides charging units for home, business and public use.<br />
-
-              My main role as Lead UX/UI designer here at Pod Point is to maintain the existing products, like the Pod Point App and services while working on new features and creating the products that are going to shape the future of the company.<br />
-
-              As electric vehicles keep rising in popularity, so is demand for charging infrastructure and our products, which always offer a challenging experience when researching how to shape the future of a fairly new industry.<br />
-
-              Talking and listening to user needs and feedback has been key in the creation and development of new products, while balancing the current industry tech limitations and expanding styling and brand guidelines.<br />
-
-              Everyday working at Pod Point has been a full dive into an ever changing industry that still has a lot of complexities with a steep learning curve.<br /><br />
-              I have been working across multiple departments and products at Pod Point, all of which needed a different approach depending on the goals.
-            </p>
-
-            <h3 class="mb-4 mt-5">Research methodologies</h3>
-            <p>
-              At Pod Point, I had the opportunity to explore and innovate various research methodologies, though occasionally constrained by time limitations, which sometimes impeded conducting thorough investigations. Despite these challenges, I actively engaged in testing and refining novel methodologies. In certain instances, we had to rely on existing data or assumptions, which raised concerns about whether our approach would be optimal for our end users. When time constraints were pressing,
-              we conducted internal testing, leveraging the diverse pool of over 500 employees with varying backgrounds and user profiles. However, I occasionally felt dissatisfied with this approach as it might have led us to overlook crucial aspects. <br /><br />
-              To enhance our research processes, we integrated several tools into our methodology, such as Hotjar, Usability Hub, and Mixpanel. Hotjar enabled us to gather valuable insights into user behavior through heatmaps, session recordings, and feedback polls. This tool provided a deeper understanding of how users interacted with our products and identified pain points.<br /><br />
-              Usability Hub allowed us to conduct remote usability tests and gather feedback from a broader audience, which expanded our reach and enabled us to identify potential issues that might have gone unnoticed otherwise.<br /><br />
-              Mixpanel, on the other hand, helped us track user engagement and measure the impact of changes in our designs or features, providing valuable data to inform decision-making. By incorporating these tools into our research process, we aimed to enrich the quality of our findings and address time constraints more efficiently
-            </p>
-
-            <h3 class="mb-4 mt-5">Design System</h3>
-            <p class="mb-3">
-              When I first started at Pod Point in 2020, I noticed that the non-existent design system and outdated brand guidelines were affecting our ability to deliver a cohesive user experience. The lack of a unified design language led to inconsistencies across our suite of products, making it challenging for users to navigate and engage with our offerings effectively.<br /><br />
-              To address these issues, I undertook the task of creating a comprehensive design system from scratch. My goal was to establish a solid foundation that would serve as a guiding framework for all product development efforts. By implementing a design system, we aimed to bring clarity, consistency, and coherence to our product ecosystem, ultimately enhancing the overall user experience.<br /><br />
-              The design system initiative involved three key components: a foundation system, including colours, spacing, typography etc and one for web applications and another specifically tailored for mobile platforms. Recognizing the unique design considerations and user interactions associated with each platform, I ensured that the design systems were optimized to suit the respective environments while maintaining overarching brand coherence.
-            </p>
-
-            <div class="row">
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-ds-1.jpg" alt="pod point design system" loading="lazy" />
-                <a href="https://www.figma.com/file/WBq2V99oSrTNiJLvwVnST8/%E2%9D%96-Foundations-UI-Design-System?type=design&node-id=0%3A1&mode=design&t=30d38KYWnbyrvFIV-1" target="_blank"
-                  >Figma
-                  <img src="/img/arrow-up-right.svg" alt="" />
-                </a>
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-ds-2.jpg" alt="pod point design system" loading="lazy" />
-                <a href="https://www.figma.com/file/XHWi3a9Gvh4HNhFPMhJGll/%E2%9D%96-Web-UI-Design-System?type=design&node-id=1%3A427&mode=design&t=5nLUiNj6IdBcBqEe-1" target="_blank"
-                  >Figma
-                  <img src="/img/arrow-up-right.svg" alt="" />
-                </a>
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-ds-3.jpg" alt="pod point design system" loading="lazy" />
-                <a href="https://www.figma.com/file/rMuiki055hLBhWQc40WupL/%E2%9D%96-Mobile-UI-Design-System?type=design&node-id=1%3A59&mode=design&t=909Las22GMKbLsQe-1" target="_blank"
-                  >Figma
-                  <img src="/img/arrow-up-right.svg" alt="" />
-                </a>
-              </div>
-            </div>
-
-            <h3 class="mb-4 mt-5">Pod Point App</h3>
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <p>
-                  The Pod Point App is the heart of the home charge ecosystem.<br />
-                  From here you can explore and access the public charging network as well as managing your WiFi enabled homecharger and your charging data.<br /><br />
-                  EV drivers have a particularly wide range of user persona that tend to condense in the range of 40+.<br />
-                  It was imperative to create a simple user experience that would benefit from consolidated design patterns that are easily recognisable.<br /><br />
-                  Researches for all Pod Point products were carried out both internally and externally, tapping in our ever-growing customer base.<br />
-                  Design sprints were also used to kickstart new products and features but following a new redesigned structure to better fit the “working from home” environment.
-                </p>
-              </div>
-              <div class="col-md-6">
-                <img class="img-fluid" src="/img/pp-1.png" alt="pp app 2022" loading="lazy" />
-              </div>
-            </div>
-            <h5 class="mb-2"><img class="align-bottom" src="/img/icon-clock.svg" alt="" width="24" /> Charge schedule</h5>
-            <p class="mb-3">
-              Charge schedule was one of the first feature I have been working on the EV driver app and one that has been requested by our user for a very long time. The feature allowed user to schedule a start and stop time to charge their EV when electricity was cheap at night, especially if you had a dual-rate tariff. This project and initial release had to overcome some technical difficulties due to the charger API and the general infrastructure limitations and was released in 2020. Due to
-              limitations we were constrained to one schedule per day, schedules could not overlap meaning that we had to develop a sigular approach for a very simple feature.
-            </p>
-            <div class="row mb-3">
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-hcs-1.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-hcs-2.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-hcs-3.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-            </div>
-            <p class="mb-3">The next release of charge schedule (2023) improved upon the previous iteration bringing more clarity around time settings and some other needed improvement suggested by our users. Among the improvements we decided to shift to a time based duration instead of selecting the start and stop time, also the days of the week are now clearer to understand where a charge is active or inactive.</p>
-            <div class="row mb-5">
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-hcs-4.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-hcs-5.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-hcs-6.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-            </div>
-            <h5 class="mb-2"><img class="align-bottom" src="/img/icon-receipt.svg" alt="" width="24" /> Charges expenses for companies</h5>
-            <p class="mb-2">As part of the new Sites Management Service, business customers using the Pod Point public network needed a way to expense their charges to the company. Before implementing this feature, drivers had to downlaod a CSV file of their charges and send that to their company for refund. The expensing feature seamlessly integrate with the Site Management Service, so that fleet managers can see charges and expenses in realtime as well as refunding drivers.</p>
-            <div class="row mb-5">
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-exp-1.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-exp-2.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-exp-3.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-            </div>
-            <h5 class="mb-2"><img class="align-bottom" src="/img/icon-solo3.svg" alt="" width="24" /> Onboarding journey</h5>
-            <p class="mb-2">As our user base grows and Pod Point units are installed on new houses and developments we needed to develop a seamless in-app experience for new owners to connect their unit to the app in order to control, schedule and charge. Before implementing this journey in the app, the customer would have to contact customer support via phone if their unit was not purchased directly through Pod Point.</p>
-            <div class="row mb-5">
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-onj-1.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-              <div class="col-md-8">
-                <img class="img-fluid" src="/img/pp-onj-2.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-            </div>
-            <h5 class="mb-2"><img class="align-bottom" src="/img/icon-carbon.svg" alt="" width="24" /> CO2 Insights</h5>
-            <p class="mb-2">CO2 insights bring awareness to everyday user about the real impact of using electricty at specific time of the day. By using the National Grid API we were able to display the amount of CO2 generated per kWh produced, so that user could make and informed and conscious choice on when was best to charge their EV or use electricity in general based on their region.</p>
-            <div class="row mb-3">
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-co2-1.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-co2-2.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-              <div class="col-md-4">
-                <img class="img-fluid" src="/img/pp-co2-3.jpg" alt="pp app 2022" loading="lazy" />
-              </div>
-            </div>
-            <h3 class="mb-4 mt-5">Sites Management Service</h3>
-            <p class="mb-3">
-              Offering a fleet management system has always been one of the main priority for the commercial side of the business as well as replacing our old management system.<br />
-
-              Among our customers Mitie, DPD, Amazon and Sky to name a few, had the need to track usage and electricity expenses for their new EV fleet delivery vehicle.<br /><br />
-
-              We had to offer a solid solution that could help visualise multiple source of data as well as managing driver, vehicle and expenses.<br />
-
-              Research and user interviews started well in advance in order to have enough time to better understand the problem we were going to solve but also creating a solution that could scale together with our customers fleet.<br /><br />
-
-              I had the opportunity to learn more about the needs and experiment with new ideas given how new the EV industry is. Lots of data needed to be managed in the process while displaying them in a simple and intuitive way was a key part of the success of our fleet solution. Once released to our business customers the product was well received and these are some of the feedback we received:
-            </p>
-            <div class="row g-4 mb-3">
-              <div class="col-md-3">
-                <figure>
-                  <blockquote class="blockquote">
-                    <p>"Better and faster than the old system, and you guys are listening"</p>
-                  </blockquote>
-                  <figcaption class="blockquote-footer">Simon @ Glyndbourne</figcaption>
-                </figure>
-              </div>
-              <div class="col-md-3">
-                <figure>
-                  <blockquote class="blockquote">
-                    <p>"The new portal is great and much easier to use, thank you for setting up access"</p>
-                  </blockquote>
-                  <figcaption class="blockquote-footer">Paul @ Landsec</figcaption>
-                </figure>
-              </div>
-              <div class="col-md-3">
-                <figure>
-                  <blockquote class="blockquote">
-                    <p>"Not complicated to use, the layout is much better"</p>
-                  </blockquote>
-                  <figcaption class="blockquote-footer">Leia @ Bet365</figcaption>
-                </figure>
-              </div>
-              <div class="col-md-3">
-                <figure>
-                  <blockquote class="blockquote">
-                    <p>"Great new site, very easy to use"</p>
-                  </blockquote>
-                  <figcaption class="blockquote-footer">Paul @ EDF Energy</figcaption>
-                </figure>
-              </div>
-              <div class="col-md-3">
-                <figure>
-                  <blockquote class="blockquote">
-                    <p>"It does seem a lot cleaner and more intuitive"</p>
-                  </blockquote>
-                  <figcaption class="blockquote-footer">Peter @ Napier</figcaption>
-                </figure>
-              </div>
-              <div class="col-md-3">
-                <figure>
-                  <blockquote class="blockquote">
-                    <p>"Looks modern and contains lots more info"</p>
-                  </blockquote>
-                  <figcaption class="blockquote-footer">Gary @ Hydro</figcaption>
-                </figure>
-              </div>
-            </div>
-            <div class="row g-4">
-              <div class="col-md-6">
-                <img class="img-fluid" src="/img/pp-sms-1.jpg" alt="" loading="lazy" />
-              </div>
-              <div class="col-md-6">
-                <img class="img-fluid" src="/img/pp-sms-2.jpg" alt="" loading="lazy" />
-              </div>
-              <div class="col-md-6">
-                <img class="img-fluid" src="/img/pp-sms-3.jpg" alt="" loading="lazy" />
-              </div>
-              <div class="col-md-6">
-                <img class="img-fluid" src="/img/pp-sms-4.jpg" alt="" loading="lazy" />
-              </div>
-            </div>
-
-            <h3 class="mb-4 mt-5">Storefront experience</h3>
-            <p>
-              The homecharge storefront experience was the remake of our current e-commerce platform, allowing customers to purchase their homecharge units. As the business requirements were growing in complexity, our current e-commerce experience needed a redesign to accomodate for more products, acessories and streamline the experience to make it simpler for our customers to complete their journey. In the process of migrating to a CMS rather than a custom built platform we collaborated with an
-              external agency to deliver the platform.
-            </p>
-            <div class="row g-4 mt-0">
-              <div class="col-md-6">
-                <img class="img-fluid" src="/img/pp-hcj-1.jpg" alt="" loading="lazy" />
-              </div>
-              <div class="col-md-6">
-                <img class="img-fluid" src="/img/pp-hcj-2.jpg" alt="" loading="lazy" />
-              </div>
-              <div class="col-md-6">
-                <img class="img-fluid" src="/img/pp-hcj-3.jpg" alt="" loading="lazy" />
-              </div>
-              <div class="col-md-6">
-                <img class="img-fluid" src="/img/pp-hcj-4.jpg" alt="" loading="lazy" />
-              </div>
-            </div>
-
-            <h3 class="mb-4 mt-5">Other projects</h3>
-            <div class="row">
-              <div class="col-md-4">
-                <p>Knowledge base</p>
-                <img class="img-fluid" src="/img/pp-5.png" alt="" loading="lazy" />
-                <p class="small">A Salesforce based knowledge base to help users find answers to their questions.</p>
-              </div>
-
-              <div class="col-md-4">
-                <p>WiFi Access Point UI</p>
-                <img class="img-fluid" src="/img/pp-6.png" alt="" loading="lazy" />
-                <p class="small">UI solution that required small size and interoperability living on the built-in memory of our homechargers to help installers and customers configure their unit.</p>
-              </div>
-
-              <div class="col-md-4">
-                <p>Branding website</p>
-                <img class="img-fluid" src="/img/pp-7.png" alt="" loading="lazy" />
-                <p class="small">Branding subdomain available at <a href="https://brand.pod-point.com">brand.pod-point.com</a> to document our brand guidelines and assets.</p>
-              </div>
-            </div>
-
-            <div class="col-md-12 text-center my-5">
-              <img src="/img/pod-point-logo-small.svg" height="40" alt="" loading="lazy" />
-              <p class="small">Pod Point 2020 - ongoing</p>
-            </div>
+          <div class="col-md-4">
+            <p>WiFi Access Point UI</p>
+            <img class="img-fluid" src="/img/pp-6.png" alt="" loading="lazy" />
+            <p class="small">UI solution that required small size and interoperability living on the built-in memory of our homechargers to help installers and customers configure their unit.</p>
           </div>
+
+          <div class="col-md-4">
+            <p>Branding website</p>
+            <img class="img-fluid" src="/img/pp-7.png" alt="" loading="lazy" />
+            <p class="small">Branding subdomain available at <a href="https://brand.pod-point.com">brand.pod-point.com</a> to document our brand guidelines and assets.</p>
+          </div>
+        </div>
+
+        <div class="col-md-12 text-center my-5">
+          <img src="/img/pod-point-logo-small.svg" height="40" alt="" loading="lazy" />
+          <p class="small">Pod Point 2020 - ongoing</p>
         </div>
       </div>
     </div>
+    <script src="/vendors/bootstrap/js/bootstrap.bundle.js"></script>
   </body>
 </html>
