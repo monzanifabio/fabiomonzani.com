@@ -1037,6 +1037,10 @@ iframe {
   padding-bottom: 1.5rem !important;
 }
 
+.ps-3 {
+  padding-left: 1rem !important;
+}
+
 .fw-normal {
   font-weight: 400 !important;
 }
@@ -1051,6 +1055,10 @@ iframe {
 
 .text-decoration-underline {
   text-decoration: underline !important;
+}
+
+.text-nowrap {
+  white-space: nowrap !important;
 }
 
 /* rtl:begin:remove */

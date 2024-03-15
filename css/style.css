@@ -124,6 +124,10 @@ dialog[open] {
 }
 .navbar-secondary {
   background-color: var(--primary-bg);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  overflow-x: scroll;
 }
 .navbar-brand {
   color: var(--raisin-black);
