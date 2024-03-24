@@ -49,6 +49,9 @@ a:hover {
   text-decoration: underline;
   color: #000000;
 }
+/* ====================================================
+ DIALOG
+==================================================== */
 
 dialog {
   padding: 0;
@@ -94,7 +97,9 @@ dialog[open] {
 .ff-ibm-plex {
   font-family: "IBM Plex Mono", monospace;
 }
-
+/* ====================================================
+ TEXT UTILITIES
+==================================================== */
 .text-regular {
   font-weight: 400;
 }
@@ -117,7 +122,9 @@ dialog[open] {
 .grayscale {
   filter: grayscale();
 }
-
+/* ====================================================
+ NAVBAR
+==================================================== */
 .navbar {
   background-color: var(--primary-color);
   border: none;
@@ -175,7 +182,9 @@ dialog[open] {
     transform: translateY(0px);
   }
 }
-
+/* ====================================================
+ CARDS
+==================================================== */
 .work-card {
   min-height: 450px;
   max-height: 650px;
@@ -188,6 +197,21 @@ dialog[open] {
 }
 .work-card:hover {
   filter: grayscale(0%);
+}
+.work-card--podpoint {
+  background-image: url("/img/podpoint-cover.png");
+}
+.work-card--lokicode {
+  background-image: url("/img/lokicode-cover.png");
+}
+.work-card--samlabs {
+  background-image: url("/img/samlabs-cover.png");
+}
+.work-card--orderly {
+  background-image: url("/img/orderly-cover.png");
+}
+.work-card--rover {
+  background-image: url("/img/rso-cover.png");
 }
 
 .project-card {
@@ -221,6 +245,10 @@ hr {
   border-color: #000000;
   opacity: 1;
 }
+/* ====================================================
+ FOOTER
+==================================================== */
+
 #about,
 footer {
   background-color: var(--raisin-black);
@@ -386,5 +414,14 @@ MOBILE
   }
   .page-overflow {
     margin-top: 73vh;
+  }
+  .work-card--lokicode {
+    background-position: -300px;
+  }
+  .work-card--orderly {
+    background-position: -330px;
+  }
+  .work-card--rover {
+    background-position: -240px;
   }
 }
