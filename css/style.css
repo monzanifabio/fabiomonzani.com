@@ -415,6 +415,9 @@ MOBILE
   .page-overflow {
     margin-top: 73vh;
   }
+  .work-card {
+    filter: grayscale(0%);
+  }
   .work-card--lokicode {
     background-position: -300px;
   }
@@ -423,5 +426,8 @@ MOBILE
   }
   .work-card--rover {
     background-position: -240px;
+  }
+  .project-card {
+    filter: grayscale(0%);
   }
 }
