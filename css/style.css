@@ -204,6 +204,9 @@ dialog[open] {
 .work-card--lokicode {
   background-image: url("/img/lokicode-cover.png");
 }
+.work-card--fanas {
+  background-image: url("/img/fanas-cover-alt.png");
+}
 .work-card--samlabs {
   background-image: url("/img/samlabs-cover.png");
 }
