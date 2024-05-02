@@ -210,6 +210,9 @@ dialog[open] {
 .work-card--samlabs {
   background-image: url("/img/samlabs-cover.png");
 }
+.work-card--meccanoplastica {
+  background-image: url("/img/meccanoplastica-cover.png");
+}
 .work-card--orderly {
   background-image: url("/img/orderly-cover.png");
 }
