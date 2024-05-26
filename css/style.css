@@ -377,13 +377,15 @@ MOBILE
 
 #mobileNav {
   margin-bottom: -8rem;
-  transition: all 0.3s ease-in-out;
+  transform: scale(1.5);
+  transition: all 0.4s cubic-bezier(0.61, -0.01, 0.44, 1.46);
   border-radius: 50px;
 }
 
 .fadeIn {
   margin-bottom: 0rem !important;
-  transition: all 0.3s ease-in-out;
+  transform: scale(1) !important;
+  transition: all 0.4s cubic-bezier(0.61, -0.01, 0.44, 1.46);
 }
 
 .nav-pills {
