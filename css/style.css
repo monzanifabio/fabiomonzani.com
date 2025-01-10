@@ -207,37 +207,37 @@ dialog[open] {
 }
 .work-card--podpoint {
   background-image: url("/img/bg-dots-dark.png"), url("/img/podpoint-cover.png");
-  background-size: 3%, auto;
+  background-size: 3%, cover;
   background-repeat: repeat, no-repeat;
 }
 .work-card--lokicode {
   background-image: url("/img/bg-dots-dark.png"), url("/img/lokicode-cover.png");
-  background-size: 3%, auto;
+  background-size: 3%, cover;
   background-repeat: repeat, no-repeat;
 }
 .work-card--fanas {
   background-image: url("/img/bg-dots-dark.png"), url("/img/fanas-cover-alt.png");
-  background-size: 3%, auto;
+  background-size: 3%, cover;
   background-repeat: repeat, no-repeat;
 }
 .work-card--samlabs {
   background-image: url("/img/bg-dots-dark.png"), url("/img/samlabs-cover.png");
-  background-size: 3%, auto;
+  background-size: 3%, cover;
   background-repeat: repeat, no-repeat;
 }
 .work-card--meccanoplastica {
   background-image: url("/img/bg-dots-dark.png"), url("/img/meccanoplastica-cover.png");
-  background-size: 3%, auto;
+  background-size: 3%, cover;
   background-repeat: repeat, no-repeat;
 }
 .work-card--orderly {
   background-image: url("/img/bg-dots-dark.png"), url("/img/orderly-cover.png");
-  background-size: 3%, auto;
+  background-size: 3%, cover;
   background-repeat: repeat, no-repeat;
 }
 .work-card--rover {
   background-image: url("/img/bg-dots-dark.png"), url("/img/rso-cover.png");
-  background-size: 3%, auto;
+  background-size: 3%, cover;
   background-repeat: repeat, no-repeat;
 }
 
