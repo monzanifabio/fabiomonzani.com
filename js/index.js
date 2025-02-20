@@ -61,3 +61,25 @@ for (var i = 0; i < links.length; i++) {
     });
   });
 }
+
+// const textReveal = document.getElementById("textReveal");
+
+function animateText(text) {
+  textReveal.textContent = "";
+  [...text].forEach((char, index) => {
+    const span = document.createElement("span");
+    span.textContent = char === " " ? "\u00A0" : char;
+    if (char === " ") {
+      span.classList.add("space");
+    }
+    span.style.transitionDelay = `${index * 0.1}s`;
+    textReveal.appendChild(span);
+
+    setTimeout(() => {
+      span.classList.add("visible");
+    }, 50);
+  });
+}
+
+// Initial text animation
+// animateText(textReveal.textContent);
