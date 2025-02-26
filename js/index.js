@@ -14,15 +14,28 @@ let squiggle = document.getElementById("squiggle");
 // Menu trigger
 let isToggled = false;
 const menuTrigger = document.querySelector('[data-bs-toggle="collapse"]');
+const targetId = "navbarSupportedContent"; // Hardcoded for reliability
+const targetMenu = document.getElementById(targetId);
+
 menuTrigger.addEventListener("click", (e) => {
   e.preventDefault();
-  isToggled = !isToggled;
-  let target = menuTrigger.getAttribute("data-bs-target");
-  let targetMenu = document.getElementById(target);
-  if (isToggled) {
-    document.getElementById(target).classList.add("show");
+
+  if (!isToggled) {
+    // Opening the menu
+    targetMenu.classList.remove("closing");
+    targetMenu.classList.add("show");
+    isToggled = true;
   } else {
-    document.getElementById(target).classList.remove("show");
+    // Closing the menu - add closing class first
+    targetMenu.classList.remove("show");
+    targetMenu.classList.add("closing");
+
+    // After animation completes, remove the closing class
+    setTimeout(() => {
+      targetMenu.classList.remove("closing");
+    }, 300); // Match this to animation duration
+
+    isToggled = false;
   }
 });
 
@@ -83,3 +96,9 @@ function animateText(text) {
 
 // Initial text animation
 // animateText(textReveal.textContent);
+
+//Animated button menu
+const btnMenu = document.querySelector(".btn-menu");
+btnMenu.addEventListener("click", () => {
+  btnMenu.classList.toggle("active");
+});
