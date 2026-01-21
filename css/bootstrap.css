@@ -1025,6 +1025,10 @@ iframe {
   margin-right: 3rem !important;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem !important;
 }
@@ -1084,6 +1088,10 @@ iframe {
 
 .pt-5 {
   padding-top: 3rem !important;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem !important;
 }
 
 .pb-4 {

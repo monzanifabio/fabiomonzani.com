@@ -230,6 +230,11 @@ dialog[open] {
 .work-card:hover {
   filter: grayscale(0%);
 }
+.work-card--eocharging {
+  background-image: url("/img/eocharging-cover.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .work-card--podpoint {
   background-image: url("/img/podpoint-cover.png");
   background-size: cover;
