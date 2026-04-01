@@ -231,22 +231,22 @@ dialog[open] {
   filter: grayscale(0%);
 }
 .work-card--eocharging {
-  background-image: url("/img/eocharging-cover.png");
+  background-image: url("/img/eocharging-cover.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .work-card--podpoint {
-  background-image: url("/img/podpoint-cover.png");
+  background-image: url("/img/podpoint-cover.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .work-card--lokicode {
-  background-image: url("/img/lokicode-cover.png");
+  background-image: url("/img/lokicode-cover.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .work-card--fanas {
-  background-image: url("/img/fanas-cover-alt.png");
+  background-image: url("/img/fanas-cover-alt.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -256,7 +256,7 @@ dialog[open] {
   background-repeat: no-repeat;
 }
 .work-card--meccanoplastica {
-  background-image: url("/img/meccanoplastica-cover.png");
+  background-image: url("/img/meccanoplastica-cover.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }

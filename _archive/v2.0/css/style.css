@@ -11,24 +11,30 @@ body {
   height: 100%;
 }
 
-html, body {
-  font-family: 'Urbanist', sans-serif;
+html,
+body {
+  font-family: "Urbanist", sans-serif;
   letter-spacing: 0.05rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   scroll-behavior: smooth;
 }
 
 hr {
-  background-color: #0C0D0D;
+  background-color: #0c0d0d;
   opacity: 1;
 }
 
 /* =============================================================================
 TEXT
 ============================================================================= */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'DM Serif Display', serif;
-  color: #0C0D0D;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+  color: #0c0d0d;
 }
 
 h1 {
@@ -44,12 +50,12 @@ h3 {
 }
 
 a {
-  color: #0C0D0D;
+  color: #0c0d0d;
   text-decoration: none;
 }
 
 a:hover {
-  color: #0C0D0D;
+  color: #0c0d0d;
 }
 
 .small {
@@ -61,13 +67,13 @@ a:hover {
 COLORS
 ============================================================================= */
 .white {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .read-more {
-  color: #0C0D0D;
+  color: #0c0d0d;
   text-decoration: none;
-  background-image: linear-gradient(transparent calc(100% - 1px), #0C0D0D 1px);
+  background-image: linear-gradient(transparent calc(100% - 1px), #0c0d0d 1px);
   background-repeat: no-repeat;
   background-size: 0% 100%;
   -webkit-transition: background-size 1s;
@@ -75,7 +81,7 @@ COLORS
 }
 
 .read-more:hover {
-  color: #0C0D0D;
+  color: #0c0d0d;
   background-size: 100% 100%;
 }
 
@@ -97,11 +103,11 @@ NAVBAR
 }
 
 #mainNav.navbar-shrink .navbar-brand {
-  color: #0C0D0D;
+  color: #0c0d0d;
 }
 
 #mainNav.navbar-shrink .nav-link {
-  color: #0C0D0D !important;
+  color: #0c0d0d !important;
 }
 
 #mainNav.navbar-shrink .nav-link:hover {
@@ -118,16 +124,16 @@ NAVBAR
 }
 
 #mainNav.navbar-shrink .border-bottom {
-  border-color: #0C0D0D !important;
+  border-color: #0c0d0d !important;
 }
 
 .nav-link {
-  font-family: 'DM Serif Display', serif;
-  color: #FFFFFF !important;
+  font-family: "DM Serif Display", serif;
+  color: #ffffff !important;
 }
 
 .border-bottom {
-  border-color: #FFFFFF !important;
+  border-color: #ffffff !important;
 }
 
 .navbar-toggler {
@@ -176,9 +182,9 @@ VIDEO JUMBOTRON
 BADGES
 ============================================================================= */
 .badge-role {
-  border: 1px solid #0C0D0D;
+  border: 1px solid #0c0d0d;
   border-radius: 4px;
-  color: #0C0D0D;
+  color: #0c0d0d;
 }
 
 /* =============================================================================
@@ -238,8 +244,8 @@ section {
 }
 
 .download-box {
-  -webkit-box-shadow: 5px 5px 0px 0px #0C0D0D;
-  box-shadow: 5px 5px 0px 0px #0C0D0D;
+  -webkit-box-shadow: 5px 5px 0px 0px #0c0d0d;
+  box-shadow: 5px 5px 0px 0px #0c0d0d;
 }
 
 .profile {
@@ -270,11 +276,11 @@ MODALS
 }
 
 .modal-title {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .btn-close {
-  background-image: url('../img/close.svg');
+  background-image: url("../img/close.svg");
   opacity: 1;
 }
 
@@ -282,7 +288,7 @@ MODALS
 FOOTER
 ============================================================================= */
 .border-top {
-  border-color: #0C0D0D !important;
+  border-color: #0c0d0d !important;
 }
 
 footer .container a img {
@@ -299,11 +305,11 @@ COVERS
 }
 
 .samlabs-cover {
-  background-image: url('../img/samlabs-cover.png');
+  background-image: url("../img/samlabs-cover.png");
 }
 
 .podpoint-cover {
-  background-image: url('../img/podpoint-cover.png');
+  background-image: url("../img/podpoint-cover.jpeg");
 }
 
 /* =============================================================================
@@ -353,7 +359,7 @@ MOBILE
 
 .nav-pills {
   background-color: #212529;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 50px;
   padding: 1rem;
 }
@@ -369,8 +375,8 @@ MOBILE
   }
 
   #mainNav.navbar-shrink {
-    color: #0C0D0D !important;
-    background-color: #FFFFFF;
+    color: #0c0d0d !important;
+    background-color: #ffffff;
   }
 
   #circle {
@@ -384,7 +390,7 @@ MOBILE
   }
 
   .jumbotron {
-    background-image: url('../video/video-fallback.gif');
+    background-image: url("../video/video-fallback.gif");
     background-size: cover;
     background-position: bottom;
   }
