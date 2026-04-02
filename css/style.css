@@ -218,7 +218,7 @@ dialog[open] {
  CARDS
 ==================================================== */
 .work-card {
-  min-height: 650px;
+  height: 50vw;
   max-height: 650px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -517,6 +517,10 @@ MOBILE
   .navbar-brand {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .work-card {
+    height: 100vw;
   }
 
   @keyframes slideDown {
