@@ -514,6 +514,9 @@ MOBILE
   a.nav-link.border-0.active {
     border-bottom: 1px solid var(--raisin-black) !important;
   }
+  .nav-link svg {
+    vertical-align: sub !important;
+  }
   .navbar-brand {
     padding-top: 1rem;
     padding-bottom: 1rem;
