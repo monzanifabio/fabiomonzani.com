@@ -260,12 +260,37 @@ dialog[open] {
     min-height: max(90svh, 44rem);
   }
 
+  .home-header .navbar {
+    --mobile-menu-background: rgba(0, 0, 0, 0.65);
+  }
+
+  .home-header .navbar::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(0px);
+    backdrop-filter: blur(0px);
+    transition:
+      background-color 0.6s ease,
+      backdrop-filter 0.6s ease,
+      -webkit-backdrop-filter 0.6s ease;
+  }
+
+  .home-header .navbar:has(.navbar-collapse.show)::before {
+    background-color: var(--mobile-menu-background);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
   .home-header .navbar-collapse {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: var(--mobile-menu-background);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 
