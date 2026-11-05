@@ -971,6 +971,10 @@ iframe {
   height: 100% !important;
 }
 
+.flex-row {
+  flex-direction: row !important;
+}
+
 .flex-column {
   flex-direction: column !important;
 }
@@ -1075,6 +1079,11 @@ iframe {
 
 .p-3 {
   padding: 1rem !important;
+}
+
+.px-2 {
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
 }
 
 .px-3 {
