@@ -221,7 +221,20 @@ dialog[open] {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent 30%, rgba(0, 0, 0, 0.75));
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.3) 10%,
+    rgba(0, 0, 0, 0.18) 20%,
+    rgba(0, 0, 0, 0.1) 30%,
+    rgba(0, 0, 0, 0.08) 40%,
+    rgba(0, 0, 0, 0.12) 50%,
+    rgba(0, 0, 0, 0.22) 60%,
+    rgba(0, 0, 0, 0.36) 70%,
+    rgba(0, 0, 0, 0.52) 80%,
+    rgba(0, 0, 0, 0.66) 90%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
 }
 
 .home-header .navbar {
